@@ -1,38 +1,30 @@
-=== Fitness Insight ===
-Contributors: pewilliams
+=== Bepta ===
+Contributors: themeplugs
 Tags: two-columns, right-sidebar, custom-colors, custom-background, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, threaded-comments, wide-blocks, blog, portfolio, e-commerce
 Requires at least: 5.0
-Requires PHP: 5.2.4
+Requires PHP: 7.0
 Tested up to: 5.6
-Stable tag: 0.2.1
+Stable tag: 1.0.0
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Fitness Insight is an elegant and multipurpose theme suitable for fitness institutes, gym club, personal trainers, health coach, yoga centre, diet and nutrition planning, indoor and outdoor exercise class, fitness enthusiasts, health experts, boot camps, weight loss, gyms, sport club, training, multi martial arts MMA, bodybuilding etc.
+Bepta is an business and multipurpose WordPress theme
 
 == Description ==
-
-Fitness Insight is an elegant and multipurpose theme suitable for fitness institutes, gym club, personal trainers, health coach, yoga centre, diet and nutrition planning, indoor and outdoor exercise class, fitness enthusiasts, health experts, boot camps, weight loss, gyms, sport club, training, multi martial arts MMA, bodybuilding, fitness courses, physiotherapist, powerlift, health-related website, athlete, crossfit, fitness trainer, gym, sports nutrition, sportswear, trainer dieticians, physiotherapy, wellness, workout, lifestyle, aerobics, boxing, cross fit, spa, massage center, cardio, meditation, cross fit, zo yoga classes, muscular, Rehabilitation, Sports therapy, exercise class, zumba dance class, Ayurveda training, spiritual class, medical clinic and health advisors. This theme has a responsive layout which means it fits in all devices and screen sizes. It is a SEO-friendly as well as user-friendly theme with lots of options for customization. It is cleanly coded which is responsible for faster page load times. Based on bootstrap framework and has social media integration. Also, the theme is cross-browser compatible and is translation ready. 
+Bepta is an business and multipurpose WordPress theme
 
 == Changelog ==
 
-= 0.1 =
+= 1.0.0 (31-12-2020) =
 	-- Initial Released.
 
-= 0.2 =
-	-- Fixed minor bugs.
-	-- Fixed the CSS for underline links.
-
-= 0.2.1 =
-	-- Added new tag.
-	-- Added customizer pro button.
 
 == Resources ==
 
-Fitness Insight WordPress Theme, Copyright 2020 pewilliams
-Fitness Insight is distributed under the terms of the GNU GPL
+Bepta WordPress Theme, Copyright 2020 pewilliams
+Bepta is distributed under the terms of the GNU GPL
 
-Fitness Insight bundles the following third-party resources:
+Bepta bundles the following third-party resources:
 
 * CSS bootstrap.css
 	Licenses: licensed under MIT License Copyright 2011-2018

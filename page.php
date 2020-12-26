@@ -1,8 +1,9 @@
 <?php
+
 /**
  * The template for displaying all pages
  * 
- * @subpackage Fitness Insight
+ * @subpackage Bepta
  * @since 1.0
  */
 
@@ -14,15 +15,15 @@ get_header(); ?>
 			<main id="main" class="site-main" role="main">
 
 				<?php
-					while ( have_posts() ) : the_post();
+				while (have_posts()) : the_post();
 
-						get_template_part( 'template-parts/page/content', 'page' );
+					get_template_part('template-parts/page/content', 'page');
 
-						if ( comments_open() || get_comments_number() ) :
-							comments_template();
-						endif;
+					if (comments_open() || get_comments_number()) :
+						comments_template();
+					endif;
 
-					endwhile; // End of the loop.
+				endwhile; // End of the loop.
 				?>
 
 			</main>
