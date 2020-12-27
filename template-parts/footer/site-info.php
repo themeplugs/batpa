@@ -1,14 +1,10 @@
 <?php
-
-/**
- * Displays footer site info
- *
- * @subpackage Batpa
- * @since 1.0
- * @version 1.4
- */
-
+if (defined('FW')) {
+	$copyright_text = fw_get_db_customizer_option('copyright_text');
+} else {
+	$copyright_text = 'Batpa WordPress Theme';
+}
 ?>
 <div class="site-info">
-	<p><?php echo esc_html('Batpa WordPress Theme', 'batpa'); ?></p>
+	<p><?php echo batpa_kses($copyright_text); ?></p>
 </div>

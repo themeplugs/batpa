@@ -6,7 +6,9 @@
  * @since 1.0
  */
 
-get_header(); ?>
+get_header();
+get_template_part('template-parts/banner/banner', 'blog');
+?>
 
 <div class="container">
 	<div id="primary" class="content-area">

@@ -29,7 +29,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'batpa'); ?></a>
 
 	<div id="page" class="site">
-		<div id="header">
+		<div id="header" class="header">
 			<div class="container">
 				<div class="wrap_figure">
 					<div class="row">
@@ -57,42 +57,14 @@
 							</div>
 						</div>
 						<div class="col-lg-9 col-md-9">
-							<div class="top_header">
-								<div class="row">
-									<div class="col-lg-9 col-md-8">
-										<?php if (get_theme_mod('batpa_call_text') != '' || get_theme_mod('batpa_call') != '') { ?>
-											<span><i class="fas fa-phone"></i><strong><?php echo esc_html(get_theme_mod('batpa_call_text', '')); ?></strong>: <?php echo esc_html(get_theme_mod('batpa_call', '')); ?></span>
-										<?php } ?>
-										<?php if (get_theme_mod('batpa_email_text') != '' || get_theme_mod('batpa_email') != '') { ?>
-											<span><i class="far fa-envelope"></i><strong><?php echo esc_html(get_theme_mod('batpa_email_text', '')); ?></strong>: <?php echo esc_html(get_theme_mod('batpa_email', '')); ?></span>
-										<?php } ?>
-									</div>
-									<div class="col-lg-3 col-md-4">
-										<div class="links">
-											<?php if (get_theme_mod('batpa_facebook') != '') { ?>
-												<a href="<?php echo esc_url(get_theme_mod('batpa_facebook', '')); ?>"><i class="fab fa-facebook-f"></i></a>
-											<?php } ?>
-											<?php if (get_theme_mod('batpa_twitter') != '') { ?>
-												<a href="<?php echo esc_url(get_theme_mod('batpa_twitter', '')); ?>"><i class="fab fa-twitter"></i></a>
-											<?php } ?>
-											<?php if (get_theme_mod('batpa_youtube') != '') { ?>
-												<a href="<?php echo esc_url(get_theme_mod('batpa_youtube', '')); ?>"><i class="fab fa-youtube"></i></a>
-											<?php } ?>
-											<?php if (get_theme_mod('batpa_instagram') != '') { ?>
-												<a href="<?php echo esc_url(get_theme_mod('batpa_instagram', '')); ?>"><i class="fab fa-instagram"></i></a>
-											<?php } ?>
-										</div>
-									</div>
+							<?php if (has_nav_menu('primary')) { ?>
+								<div class="toggle-menu gb_menu">
+									<button onclick="batpa_gb_Menu_open()" class="gb_toggle">
+										<i class="fas fa-ellipsis-h"></i>
+									</button>
 								</div>
-							</div>
+							<?php } ?>
 							<div class="menu_header">
-								<?php if (has_nav_menu('primary')) { ?>
-									<div class="toggle-menu gb_menu">
-										<button onclick="batpa_gb_Menu_open()" class="gb_toggle"><i class="fas fa-ellipsis-h"></i>
-											<p><?php esc_html_e('Menu', 'batpa'); ?></p>
-										</button>
-									</div>
-								<?php } ?>
 								<?php get_template_part('template-parts/navigation/navigation'); ?>
 							</div>
 						</div>

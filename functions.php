@@ -7,6 +7,29 @@
  * @since 1.0
  */
 
+// define methode
+// ------------------------------------------------------------------------
+define('BATPA_VERSION', '1.0.0');
+define('BATPA_MINWP_VERSION', '5.3');
+
+
+// define methode for theme assets url
+// ------------------------------------------------------------------------
+define('BATPA_THEME_URI', get_template_directory_uri());
+define('BATPA_IMG', BATPA_THEME_URI . '/assets/images');
+define('BATPA_CSS', BATPA_THEME_URI . '/assets/css');
+define('BATPA_JS', BATPA_THEME_URI . '/assets/js');
+
+
+
+// define methode for theme assets directory path
+// ----------------------------------------------------------------------------------------
+define('BATPA_THEME_DIR', get_template_directory());
+define('BATPA_IMG_DIR', BATPA_THEME_DIR . '/assets/images');
+define('BATPA_CSS_DIR', BATPA_THEME_DIR . '/assets/css');
+define('BATPA_JS_DIR', BATPA_THEME_DIR . '/assets/js');
+
+
 function batpa_setup()
 {
 

@@ -58,3 +58,172 @@ function batpa_excerpt_more($link)
     return ' &hellip; ' . $link;
 }
 add_filter('excerpt_more', 'batpa_excerpt_more');
+
+
+
+// WP kses allowed tags
+// ----------------------------------------------------------------------------------------
+function batpa_kses($raw)
+{
+
+    $allowed_tags = array(
+        'a'                                 => array(
+            'class'     => array(),
+            'href'     => array(),
+            'rel'     => array(),
+            'title'     => array(),
+            'target'     => array(),
+        ),
+        'abbr'                             => array(
+            'title' => array(),
+        ),
+        'b'                                 => array(),
+        'blockquote'                     => array(
+            'cite' => array(),
+        ),
+        'cite'                             => array(
+            'title' => array(),
+        ),
+        'code'                             => array(),
+        'del'                             => array(
+            'datetime'     => array(),
+            'title'         => array(),
+        ),
+        'dd'                             => array(),
+        'div'                             => array(
+            'class'     => array(),
+            'title'     => array(),
+            'style'     => array(),
+        ),
+        'dl'                             => array(),
+        'dt'                             => array(),
+        'em'                             => array(),
+        'h1'                             => array(),
+        'h2'                             => array(),
+        'h3'                             => array(),
+        'h4'                             => array(),
+        'h5'                             => array(),
+        'h6'                             => array(),
+        'i'                                 => array(
+            'class' => array(),
+        ),
+        'img'                             => array(
+            'alt'     => array(),
+            'class'     => array(),
+            'height' => array(),
+            'src'     => array(),
+            'width'     => array(),
+        ),
+        'li'                             => array(
+            'class' => array(),
+        ),
+        'ol'                             => array(
+            'class' => array(),
+        ),
+        'p'                                 => array(
+            'class' => array(),
+        ),
+        'q'                                 => array(
+            'cite'     => array(),
+            'title'     => array(),
+        ),
+        'span'                             => array(
+            'class'     => array(),
+            'title'     => array(),
+            'style'     => array(),
+        ),
+        'iframe'                         => array(
+            'width'             => array(),
+            'height'         => array(),
+            'scrolling'         => array(),
+            'frameborder'     => array(),
+            'allow'             => array(),
+            'src'             => array(),
+        ),
+        'strike'                         => array(),
+        'br'                             => array(),
+        'strong'                         => array(),
+        'data-wow-duration'                 => array(),
+        'data-wow-delay'                 => array(),
+        'data-wallpaper-options'         => array(),
+        'data-stellar-background-ratio'     => array(),
+        'ul'                             => array(
+            'class' => array(),
+        ),
+    );
+
+    if (function_exists('wp_kses')) { // WP is here
+        $allowed = wp_kses($raw, $allowed_tags);
+    } else {
+        $allowed = $raw;
+    }
+
+
+    return $allowed;
+}
+
+// breadcrumb
+
+function the_breadcrumb($sep = ' > ')
+{
+
+
+    if (!is_front_page()) {
+
+        // Start the breadcrumb with a link to your homepage
+        echo '<div class="breadcrumbs">';
+        echo '<a href="';
+        echo get_option('home');
+        echo '">';
+        bloginfo('name');
+        echo '</a>' . $sep;
+
+        // Check if the current page is a category, an archive or a single page. If so show the category or archive name.
+        if (is_category() || is_single()) {
+            the_category('title_li=');
+        } elseif (is_archive() || is_single()) {
+            if (is_day()) {
+                printf(__('%s', 'batpa'), get_the_date());
+            } elseif (is_month()) {
+                printf(__('%s', 'batpa'), get_the_date(_x('F Y', 'monthly archives date format', 'batpa')));
+            } elseif (is_year()) {
+                printf(__('%s', 'batpa'), get_the_date(_x('Y', 'yearly archives date format', 'batpa')));
+            } else {
+                _e('Blog Archives', 'batpa');
+            }
+        }
+
+        // If the current page is a single post, show its title with the separator
+        if (is_single()) {
+            echo $sep;
+            the_title();
+        }
+
+        // If the current page is a static page, show its title.
+        if (is_page()) {
+            echo the_title();
+        }
+
+        // if you have a static page assigned to be you posts list page. It will find the title of the static page and display it. i.e Home >> Blog
+        if (is_home()) {
+            global $post;
+            $page_for_posts_id = get_option('page_for_posts');
+            if ($page_for_posts_id) {
+                $post = get_page($page_for_posts_id);
+                setup_postdata($post);
+                the_title();
+                rewind_posts();
+            }
+        }
+
+        echo '</div>';
+    }
+}
+
+
+// theme option
+function theme_options($key)
+{
+    $value  = fw_get_db_customizer_option($key);
+    return $value;
+}

@@ -3,13 +3,13 @@
 /**
  * Displays top navigation
  *
- * @subpackage Batpa
+ * @subpackage Bepta
  * @since 1.0
  */
 ?>
 
 <div id="gb_responsive" class="nav side_gb_nav">
-	<nav id="top_gb_menu" class="gb_nav_menu" role="navigation" aria-label="<?php esc_attr_e('Menu', 'batpa'); ?>">
+	<nav id="top_gb_menu" class="gb_nav_menu" role="navigation" aria-label="<?php esc_attr_e('Menu', 'bepta'); ?>">
 		<?php if (has_nav_menu('primary')) {
 			wp_nav_menu(array(
 				'theme_location' => 'primary',
@@ -20,5 +20,6 @@
 			));
 		} ?>
 		<a href="javascript:void(0)" class="closebtn gb_menu" onclick="batpa_gb_Menu_close()">x<span class="screen-reader-text"><?php esc_html_e('Close Menu', 'batpa'); ?></span></a>
+
 	</nav>
 </div>
