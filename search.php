@@ -3,7 +3,7 @@
 /**
  * The template for displaying search results pages
  * 
- * @subpackage Bepta
+ * @subpackage Batpa
  * @since 1.0
  */
 
@@ -14,10 +14,10 @@ get_header(); ?>
 		<header class="page-header">
 			<?php if (have_posts()) : ?>
 				<h1 class="entry-title"><span><?php /* translators: %s: search term */
-												printf(esc_html__('Results For: %s', 'bepta'), esc_html(get_search_query())); ?> </span>
+												printf(esc_html__('Results For: %s', 'batpa'), esc_html(get_search_query())); ?> </span>
 				</h1>
 			<?php else : ?>
-				<h2 class="page-title"><span><?php esc_html_e('Nothing Found', 'bepta'); ?></span></h2>
+				<h2 class="page-title"><span><?php esc_html_e('Nothing Found', 'batpa'); ?></span></h2>
 			<?php endif; ?>
 		</header>
 		<div class="content-area">
@@ -36,7 +36,7 @@ get_header(); ?>
 
 							else : ?>
 
-								<p><?php esc_html_e('Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'bepta'); ?></p>
+								<p><?php esc_html_e('Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'batpa'); ?></p>
 							<?php
 								get_search_form();
 
@@ -46,9 +46,9 @@ get_header(); ?>
 								<?php
 								// Previous/next page navigation.
 								the_posts_pagination(array(
-									'prev_text'          => __('Previous page', 'bepta'),
-									'next_text'          => __('Next page', 'bepta'),
-									'before_page_number' => '<span class="meta-nav screen-reader-text">' . __('Page', 'bepta') . ' </span>',
+									'prev_text'          => __('Previous page', 'batpa'),
+									'next_text'          => __('Next page', 'batpa'),
+									'before_page_number' => '<span class="meta-nav screen-reader-text">' . __('Page', 'batpa') . ' </span>',
 								));
 								?>
 								<div class="clearfix"></div>

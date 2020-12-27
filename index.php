@@ -3,7 +3,7 @@
 /**
  * The main template file
  *
- * @subpackage Bepta
+ * @subpackage Batpa
  * @since 1.0
  */
 
@@ -17,7 +17,7 @@ get_header(); ?>
 			</header>
 		<?php else : ?>
 			<header class="page-header">
-				<h2 class="page-title"><span><?php esc_html_e('Posts', 'bepta'); ?></span></h2>
+				<h2 class="page-title"><span><?php esc_html_e('Posts', 'batpa'); ?></span></h2>
 			</header>
 		<?php endif; ?>
 		<div class="content-area">
@@ -44,9 +44,9 @@ get_header(); ?>
 							<div class="navigation">
 								<?php
 								the_posts_pagination(array(
-									'prev_text'          => __('Previous page', 'bepta'),
-									'next_text'          => __('Next page', 'bepta'),
-									'before_page_number' => '<span class="meta-nav screen-reader-text">' . __('Page', 'bepta') . ' </span>',
+									'prev_text'          => __('Previous page', 'batpa'),
+									'next_text'          => __('Next page', 'batpa'),
+									'before_page_number' => '<span class="meta-nav screen-reader-text">' . __('Page', 'batpa') . ' </span>',
 								));
 								?>
 								<div class="clearfix"></div>

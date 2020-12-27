@@ -3,7 +3,7 @@
 /**
  * Additional features to allow styling of the templates
  *
- * @subpackage Bepta
+ * @subpackage Batpa
  * @since 1.0
  */
 
@@ -13,7 +13,7 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-function bepta_body_classes($classes)
+function batpa_body_classes($classes)
 {
 	// Add class of group-blog to blogs with more than 1 published author.
 	if (is_multi_author()) {
@@ -27,12 +27,12 @@ function bepta_body_classes($classes)
 
 	// Add class if we're viewing the Customizer for easier styling of theme options.
 	if (is_customize_preview()) {
-		$classes[] = 'bepta-customizer';
+		$classes[] = 'batpa-customizer';
 	}
 
 	// Add class on front page.
 	if (is_front_page() && 'posts' !== get_option('show_on_front')) {
-		$classes[] = 'bepta-front-page';
+		$classes[] = 'batpa-front-page';
 	}
 
 	// Add a class if there is a custom header.
@@ -56,9 +56,9 @@ function bepta_body_classes($classes)
 
 	return $classes;
 }
-add_filter('body_class', 'bepta_body_classes');
+add_filter('body_class', 'batpa_body_classes');
 
-function bepta_is_frontpage()
+function batpa_is_frontpage()
 {
 	return (is_front_page() && !is_home());
 }

@@ -3,7 +3,7 @@
 /**
  * The template for displaying all pages
  * 
- * @subpackage Bepta
+ * @subpackage Batpa
  * @since 1.0
  */
 

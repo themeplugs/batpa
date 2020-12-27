@@ -1,13 +1,13 @@
 <?php
 
 /**
- * Bepta functions
+ * Batpa functions
  *
- * @subpackage Bepta
+ * @subpackage Batpa
  * @since 1.0
  */
 
-function bepta_setup()
+function batpa_setup()
 {
 
 	add_theme_support('automatic-feed-links');
@@ -17,12 +17,12 @@ function bepta_setup()
 	add_theme_support('custom-background', array(
 		'default-color' => 'ffffff',
 	));
-	add_image_size('bepta-featured-image', 850, 560, true);
-	add_image_size('bepta-thumbnail-avatar', 100, 100, true);
+	add_image_size('batpa-featured-image', 850, 560, true);
+	add_image_size('batpa-thumbnail-avatar', 100, 100, true);
 
 	$GLOBALS['content_width'] = 1170;
 	register_nav_menus(array(
-		'primary' => __('Primary Menu', 'bepta'),
+		'primary' => __('Primary Menu', 'batpa'),
 	));
 
 	add_theme_support('html5', array(
@@ -46,12 +46,12 @@ function bepta_setup()
 	 * This theme styles the visual editor to resemble the theme style,
 	 * specifically font, colors, and column width.
  	 */
-	add_editor_style(array('assets/css/editor-style.css', bepta_fonts_url()));
+	add_editor_style(array('assets/css/editor-style.css', batpa_fonts_url()));
 }
-add_action('after_setup_theme', 'bepta_setup');
+add_action('after_setup_theme', 'batpa_setup');
 
 
-function bepta_fonts_url()
+function batpa_fonts_url()
 {
 	$font_url = '';
 	$font_family = array();
@@ -65,11 +65,11 @@ function bepta_fonts_url()
 }
 
 
-function bepta_front_page_template($template)
+function batpa_front_page_template($template)
 {
 	return is_home() ? '' : $template;
 }
-add_filter('frontpage_template',  'bepta_front_page_template');
+add_filter('frontpage_template',  'batpa_front_page_template');
 
 // included global 
 require get_parent_theme_file_path('/inc/helper/global.php');

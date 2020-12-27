@@ -3,7 +3,7 @@
 /**
  * The template for displaying all single posts
  * 
- * @subpackage Bepta
+ * @subpackage Batpa
  * @since 1.0
  */
 
@@ -28,8 +28,8 @@ get_header(); ?>
 								endif;
 
 								the_post_navigation(array(
-									'prev_text' => '<span class="screen-reader-text">' . __('Previous Post', 'bepta') . '</span><span aria-hidden="true" class="nav-subtitle">' . __('Previous', 'bepta') . '</span>',
-									'next_text' => '<span class="screen-reader-text">' . __('Next Post', 'bepta') . '</span><span aria-hidden="true" class="nav-subtitle">' . __('Next', 'bepta') . '</span> ',
+									'prev_text' => '<span class="screen-reader-text">' . __('Previous Post', 'batpa') . '</span><span aria-hidden="true" class="nav-subtitle">' . __('Previous', 'batpa') . '</span>',
+									'next_text' => '<span class="screen-reader-text">' . __('Next Post', 'batpa') . '</span><span aria-hidden="true" class="nav-subtitle">' . __('Next', 'batpa') . '</span> ',
 								));
 
 							endwhile; // End of the loop.

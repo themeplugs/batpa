@@ -3,7 +3,7 @@
 /**
  * The template for displaying archive pages
  *
- * @subpackage Bepta
+ * @subpackage Batpa
  * @since 1.0
  */
 
@@ -45,9 +45,9 @@ get_header(); ?>
 							<div class="navigation">
 								<?php
 								the_posts_pagination(array(
-									'prev_text'          => __('Previous page', 'bepta'),
-									'next_text'          => __('Next page', 'bepta'),
-									'before_page_number' => '<span class="meta-nav screen-reader-text">' . __('Page', 'bepta') . ' </span>',
+									'prev_text'          => __('Previous page', 'batpa'),
+									'next_text'          => __('Next page', 'batpa'),
+									'before_page_number' => '<span class="meta-nav screen-reader-text">' . __('Page', 'batpa') . ' </span>',
 								));
 								?>
 								<div class="clearfix"></div>

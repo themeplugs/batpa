@@ -7,15 +7,15 @@ jQuery(function($){
   	});
 });
 
-function bepta_gb_Menu_open() {
+function batpa_gb_Menu_open() {
 	jQuery(".side_gb_nav").addClass('show');
 }
-function bepta_gb_Menu_close() {
+function batpa_gb_Menu_close() {
 	jQuery(".side_gb_nav").removeClass('show');
 }
 
 jQuery(function($){
 	$('.gb_toggle').click(function () {
-        bepta_Keyboard_loop($('.side_gb_nav'));
+        batpa_Keyboard_loop($('.side_gb_nav'));
     });
 });

@@ -3,7 +3,7 @@
 /**
  * The sidebar containing the main widget area
  * 
- * @subpackage Bepta
+ * @subpackage Batpa
  * @since 1.0
  */
 ?>

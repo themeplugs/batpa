@@ -3,7 +3,7 @@
 /**
  * Template part for displaying page content in page.php
  *
- * @subpackage Bepta
+ * @subpackage Batpa
  * @since 1.0
  */
 ?>
@@ -17,7 +17,7 @@
 		<p><?php the_content(); ?></p>
 		<?php
 		wp_link_pages(array(
-			'before' => '<div class="page-links">' . __('Pages:', 'bepta'),
+			'before' => '<div class="page-links">' . __('Pages:', 'batpa'),
 			'after'  => '</div>',
 		));
 		?>

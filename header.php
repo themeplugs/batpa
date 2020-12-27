@@ -3,7 +3,7 @@
 /**
  * The header for our theme
  *
- * @subpackage Bepta
+ * @subpackage Batpa
  * @since 1.0
  */
 
@@ -26,7 +26,7 @@
 		do_action('wp_body_open');
 	}
 	?>
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'bepta'); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'batpa'); ?></a>
 
 	<div id="page" class="site">
 		<div id="header">
@@ -60,26 +60,26 @@
 							<div class="top_header">
 								<div class="row">
 									<div class="col-lg-9 col-md-8">
-										<?php if (get_theme_mod('bepta_call_text') != '' || get_theme_mod('bepta_call') != '') { ?>
-											<span><i class="fas fa-phone"></i><strong><?php echo esc_html(get_theme_mod('bepta_call_text', '')); ?></strong>: <?php echo esc_html(get_theme_mod('bepta_call', '')); ?></span>
+										<?php if (get_theme_mod('batpa_call_text') != '' || get_theme_mod('batpa_call') != '') { ?>
+											<span><i class="fas fa-phone"></i><strong><?php echo esc_html(get_theme_mod('batpa_call_text', '')); ?></strong>: <?php echo esc_html(get_theme_mod('batpa_call', '')); ?></span>
 										<?php } ?>
-										<?php if (get_theme_mod('bepta_email_text') != '' || get_theme_mod('bepta_email') != '') { ?>
-											<span><i class="far fa-envelope"></i><strong><?php echo esc_html(get_theme_mod('bepta_email_text', '')); ?></strong>: <?php echo esc_html(get_theme_mod('bepta_email', '')); ?></span>
+										<?php if (get_theme_mod('batpa_email_text') != '' || get_theme_mod('batpa_email') != '') { ?>
+											<span><i class="far fa-envelope"></i><strong><?php echo esc_html(get_theme_mod('batpa_email_text', '')); ?></strong>: <?php echo esc_html(get_theme_mod('batpa_email', '')); ?></span>
 										<?php } ?>
 									</div>
 									<div class="col-lg-3 col-md-4">
 										<div class="links">
-											<?php if (get_theme_mod('bepta_facebook') != '') { ?>
-												<a href="<?php echo esc_url(get_theme_mod('bepta_facebook', '')); ?>"><i class="fab fa-facebook-f"></i></a>
+											<?php if (get_theme_mod('batpa_facebook') != '') { ?>
+												<a href="<?php echo esc_url(get_theme_mod('batpa_facebook', '')); ?>"><i class="fab fa-facebook-f"></i></a>
 											<?php } ?>
-											<?php if (get_theme_mod('bepta_twitter') != '') { ?>
-												<a href="<?php echo esc_url(get_theme_mod('bepta_twitter', '')); ?>"><i class="fab fa-twitter"></i></a>
+											<?php if (get_theme_mod('batpa_twitter') != '') { ?>
+												<a href="<?php echo esc_url(get_theme_mod('batpa_twitter', '')); ?>"><i class="fab fa-twitter"></i></a>
 											<?php } ?>
-											<?php if (get_theme_mod('bepta_youtube') != '') { ?>
-												<a href="<?php echo esc_url(get_theme_mod('bepta_youtube', '')); ?>"><i class="fab fa-youtube"></i></a>
+											<?php if (get_theme_mod('batpa_youtube') != '') { ?>
+												<a href="<?php echo esc_url(get_theme_mod('batpa_youtube', '')); ?>"><i class="fab fa-youtube"></i></a>
 											<?php } ?>
-											<?php if (get_theme_mod('bepta_instagram') != '') { ?>
-												<a href="<?php echo esc_url(get_theme_mod('bepta_instagram', '')); ?>"><i class="fab fa-instagram"></i></a>
+											<?php if (get_theme_mod('batpa_instagram') != '') { ?>
+												<a href="<?php echo esc_url(get_theme_mod('batpa_instagram', '')); ?>"><i class="fab fa-instagram"></i></a>
 											<?php } ?>
 										</div>
 									</div>
@@ -88,8 +88,8 @@
 							<div class="menu_header">
 								<?php if (has_nav_menu('primary')) { ?>
 									<div class="toggle-menu gb_menu">
-										<button onclick="bepta_gb_Menu_open()" class="gb_toggle"><i class="fas fa-ellipsis-h"></i>
-											<p><?php esc_html_e('Menu', 'bepta'); ?></p>
+										<button onclick="batpa_gb_Menu_open()" class="gb_toggle"><i class="fas fa-ellipsis-h"></i>
+											<p><?php esc_html_e('Menu', 'batpa'); ?></p>
 										</button>
 									</div>
 								<?php } ?>

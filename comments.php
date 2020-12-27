@@ -3,7 +3,7 @@
 /**
  * The template for displaying comments
  * 
- * @subpackage Bepta
+ * @subpackage Batpa
  * @since 1.0
  */
 
@@ -20,7 +20,7 @@ if (post_password_required()) {
 			$comments_number = get_comments_number();
 			if ('1' === $comments_number) {
 				/* translators: %s: post title */
-				printf(esc_html__('One thought on &ldquo;%s&rdquo;', 'bepta'), esc_html(get_the_title()));
+				printf(esc_html__('One thought on &ldquo;%s&rdquo;', 'batpa'), esc_html(get_the_title()));
 			} else {
 				printf(
 					esc_html(
@@ -30,7 +30,7 @@ if (post_password_required()) {
 							'%1$s thoughts on &ldquo;%2$s&rdquo;',
 							$comments_number,
 							'comments title',
-							'bepta'
+							'batpa'
 						)
 					),
 					esc_html(number_format_i18n($comments_number)),
@@ -63,7 +63,7 @@ if (post_password_required()) {
 	endif;
 
 	if (!comments_open() && get_comments_number() && post_type_supports(get_post_type(), 'comments')) : ?>
-		<p class="no-comments"><?php esc_html_e('Comments are closed.', 'bepta'); ?></p>
+		<p class="no-comments"><?php esc_html_e('Comments are closed.', 'batpa'); ?></p>
 	<?php
 	endif;
 

@@ -3,7 +3,7 @@
 /**
  * Displays footer widgets if assigned
  *
- * @subpackage Bepta
+ * @subpackage Batpa
  * @since 1.0
  * @version 1.4
  */

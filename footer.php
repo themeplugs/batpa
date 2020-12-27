@@ -3,7 +3,7 @@
 /**
  * The template for displaying the footer
  *
- * @subpackage Bepta
+ * @subpackage Batpa
  * @since 1.0
  */
 

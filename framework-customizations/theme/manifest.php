@@ -6,9 +6,9 @@ if (!defined('FW')) {
 
 $manifest = array();
 
-$manifest['name']			 = esc_html__('Bepta', 'bepta');
+$manifest['name']			 = esc_html__('Batpa', 'batpa');
 $manifest['uri']			 = esc_url('http://themeplugs.com/');
-$manifest['description']	 = esc_html__('Bepta WordPress theme', 'bepta');
+$manifest['description']	 = esc_html__('Batpa WordPress theme', 'batpa');
 $manifest['version']		 = '1.0';
 $manifest['author']			 = 'themeplugs';
 $manifest['author_uri']		 = esc_url('http://themeplugs.com/');

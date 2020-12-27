@@ -1,4 +1,4 @@
-=== Bepta ===
+=== Batpa ===
 Contributors: themeplugs
 Tags: two-columns, right-sidebar, custom-colors, custom-background, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, threaded-comments, wide-blocks, blog, portfolio, e-commerce
 Requires at least: 5.0
@@ -8,10 +8,10 @@ Stable tag: 1.0.0
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Bepta is an business and multipurpose WordPress theme
+Batpa is an business and multipurpose WordPress theme
 
 == Description ==
-Bepta is an business and multipurpose WordPress theme
+Batpa is an business and multipurpose WordPress theme
 
 == Changelog ==
 
@@ -21,10 +21,10 @@ Bepta is an business and multipurpose WordPress theme
 
 == Resources ==
 
-Bepta WordPress Theme, Copyright 2020 pewilliams
-Bepta is distributed under the terms of the GNU GPL
+Batpa WordPress Theme, Copyright 2020 pewilliams
+Batpa is distributed under the terms of the GNU GPL
 
-Bepta bundles the following third-party resources:
+Batpa bundles the following third-party resources:
 
 * CSS bootstrap.css
 	Licenses: licensed under MIT License Copyright 2011-2018
