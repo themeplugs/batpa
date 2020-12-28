@@ -99,6 +99,7 @@ require get_parent_theme_file_path('/inc/helper/global.php');
 
 // included enqueue
 require get_parent_theme_file_path('/inc/enqueue/enqueue-front.php');
+require get_parent_theme_file_path('/inc/enqueue/enqueue-inline.php');
 
 // included widgets
 require get_parent_theme_file_path('/inc/widgets.php');
@@ -111,3 +112,6 @@ require get_parent_theme_file_path('/inc/template-tags.php');
 
 // included template functions
 require get_parent_theme_file_path('/inc/template-functions.php');
+
+// included unson google fonts
+require get_parent_theme_file_path('/classes/unyson-google-fonts.php');

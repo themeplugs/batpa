@@ -227,3 +227,39 @@ function theme_options($key)
     $value  = fw_get_db_customizer_option($key);
     return $value;
 }
+
+
+
+
+/**
+ * Get shortcode advanced Font styles
+ *
+ */
+function batpa_advanced_font_styles($style)
+{
+    $font_styles = '';
+    if (isset($style['google_font']) && ($style['google_font'] === true || $style['google_font'] === 'true')) {
+
+        $font_styles .= isset($style['family']) ? 'font-family:"' . $style['family'] . '";' : '';
+
+        if (strpos($style['variation'], 'italic') !== false)
+            $font_styles .= 'font-style:italic;';
+        elseif (strpos($style['variation'], 'oblique') !== false)
+            $font_styles .= 'font-style: oblique;';
+        else
+            $font_styles .= 'font-style: normal;';
+
+        $font_styles .= (intval($style['variation']) == 0) ? 'font-weight:400;' : 'font-weight:' . intval($style['variation']) . ';';
+    } else {
+        $font_styles .= isset($style['family']) ? 'font-family:"' . $style['family'] . '";' : '';
+        $font_styles .= isset($style['style']) ? 'font-style:' . esc_attr($style['style']) . ';' : '';
+        $font_styles .= isset($style['weight']) ? 'font-weight:' . esc_attr($style['weight']) . ';' : '';
+    }
+    $font_styles .= isset($style['color']) && !empty($style['color']) ? 'color:' . esc_attr($style['color']) . ';' : '';
+    $font_styles .= isset($style['line-height']) && !empty($style['line-height']) ? 'line-height:' . esc_attr($style['line-height']) . 'px;' : '';
+    $font_styles .= isset($style['letter-spacing']) && !empty($style['letter-spacing']) ? 'letter-spacing:' . esc_attr($style['letter-spacing']) . 'px;' : '';
+    $font_styles .= isset($style['size']) && !empty($style['size']) ? 'font-size:' . esc_attr($style['size']) . 'px;' : '';
+
+
+    return !empty($font_styles) ? $font_styles : '';
+}

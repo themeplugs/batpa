@@ -19,7 +19,6 @@ $options = array(
 						),
 						'components' => array(
 							'family'		 => true,
-							// 'style', 'weight', 'subset', 'variation' will appear and disappear along with 'family'
 							'size'			 => true,
 							'style'			 => false,
 							'subset'		 => false,
@@ -36,7 +35,7 @@ $options = array(
 						'value'		 => array(
 							'family'		 => 'Nunito',
 							'variation'		 => '800',
-							'line-height'	 => 15,
+							'line-height'	 => '',
 							'letter-spacing' => 0,
 							'weight'		 => 400,
 
@@ -48,7 +47,7 @@ $options = array(
 							'size'			 => false,
 							'line-height'	 => false,
 							'letter-spacing' => false,
-							'color'			 => true
+							'color'			 => false
 						),
 						'label'		 => esc_html__('Heading Fonts', 'batpa'),
 						'desc'		 => esc_html__('This is for heading google fonts', 'batpa'),
@@ -141,7 +140,7 @@ $options = array(
 					'copyright_text'			 => array(
 						'label'		 => esc_html__('Copyright Text', 'batpa'),
 						'type'  => 'wp-editor',
-						'default' => esc_html__('Batpa WordPress Theme'),
+						'value' => esc_html__('Batpa WordPress Theme'),
 					),
 				),
 			),
