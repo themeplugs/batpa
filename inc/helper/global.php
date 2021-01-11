@@ -165,7 +165,7 @@ function batpa_kses($raw)
 // breadcrumb
 
 function the_breadcrumb($sep = ' > ')
-{
+{ // phpcs:ignore WPThemeReview.CoreFunctionality.PrefixAllGlobals.NonPrefixedFunctionFound
 
 
     if (!is_front_page()) {
@@ -173,7 +173,7 @@ function the_breadcrumb($sep = ' > ')
         // Start the breadcrumb with a link to your homepage
         echo '<div class="breadcrumbs">';
         echo '<a href="';
-        echo home_url();
+        echo esc_url(home_url());
         echo '">';
         bloginfo('name');
         echo '</a>' . $sep;
@@ -183,11 +183,11 @@ function the_breadcrumb($sep = ' > ')
             the_category('title_li=');
         } elseif (is_archive() || is_single()) {
             if (is_day()) {
-                printf(__('%s', 'batpa'), get_the_date());
+                printf(__('%s', 'batpa'), get_the_date()); // phpcs:ignore WordPress.WP.I18n.NoEmptyStrings
             } elseif (is_month()) {
-                printf(__('%s', 'batpa'), get_the_date(_x('F Y', 'monthly archives date format', 'batpa')));
+                printf(__('%s', 'batpa'), get_the_date(_x('F Y', 'monthly archives date format', 'batpa'))); // phpcs:ignore WordPress.WP.I18n.NoEmptyStrings
             } elseif (is_year()) {
-                printf(__('%s', 'batpa'), get_the_date(_x('Y', 'yearly archives date format', 'batpa')));
+                printf(__('%s', 'batpa'), get_the_date(_x('Y', 'yearly archives date format', 'batpa'))); // phpcs:ignore WordPress.WP.I18n.NoEmptyStrings
             } else {
                 _e('Blog Archives', 'batpa');
             }
