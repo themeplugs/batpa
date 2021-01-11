@@ -3,13 +3,13 @@
 /**
  * Displays top navigation
  *
- * @subpackage Bepta
+ * @subpackage Batpa
  * @since 1.0
  */
 ?>
 
 <div id="gb_responsive" class="nav side_gb_nav">
-	<nav id="top_gb_menu" class="gb_nav_menu" role="navigation" aria-label="<?php esc_attr_e('Menu', 'bepta'); ?>">
+	<nav id="top_gb_menu" class="gb_nav_menu" role="navigation" aria-label="<?php esc_attr_e('Menu', 'batpa'); ?>">
 		<?php if (has_nav_menu('primary')) {
 			wp_nav_menu(array(
 				'theme_location' => 'primary',

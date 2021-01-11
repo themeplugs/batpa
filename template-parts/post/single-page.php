@@ -12,7 +12,6 @@
 	<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<div class="postbox smallpostimage">
 			<div class="padd-box">
-				<h2><?php the_title(); ?></h2>
 				<?php the_post_thumbnail(); ?>
 				<div class="overlay">
 					<div class="date-box">

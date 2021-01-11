@@ -17,13 +17,15 @@ function batpa_scripts()
 
         //Bootstarp 
         wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.css');
-
-        // Theme stylesheet.
-        wp_enqueue_style('batpa-style', get_stylesheet_uri());
-
         //font-awesome
         wp_enqueue_style('font-awesome', get_template_directory_uri() . '/assets/css/fontawesome-all.css');
 
+        wp_enqueue_style('batpa-style', get_template_directory_uri() . '/assets/css/master.css');
+        // Theme stylesheet.
+    }
+
+
+    if (!is_admin()) {
         //Custom JS
         wp_enqueue_script('batpa-custom.js', get_theme_file_uri('/assets/js/batpa-custom.js'), array('jquery'), true);
 

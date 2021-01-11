@@ -8,11 +8,11 @@ if (defined('FW')) {
    $show_breadcrumb = theme_options('breadcumb_show');
    //image
    $banner_image    = (is_array($banner_settings) && $banner_settings['url'] != '') ?
-      $banner_settings['url'] : BATPA_IMG . '/banner.jpg';
+      $banner_settings['url'] : '';
    //breadcumb 
 } else {
    //default
-   $banner_image    = BATPA_IMG . '/banner/blog_banner.jpg';
+   $banner_image    = '';
    $banner_title    = get_bloginfo('name');
    $show_breadcrumb = 'no';
 }
@@ -29,10 +29,13 @@ if (defined('FW')) {
                   <?php
                   if (is_archive()) {
                      the_archive_title();
+                  } elseif (is_single() || is_page()) {
+                     the_title();
                   } else {
                      echo esc_html(get_bloginfo('name'));
                   }
                   ?>
+
                </h1>
                <?php if (isset($show_breadcrumb) && $show_breadcrumb == 'yes') : ?>
                   <?php the_breadcrumb(); ?>

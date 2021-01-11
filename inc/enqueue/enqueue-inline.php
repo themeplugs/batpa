@@ -2,7 +2,7 @@
 
 function batpa_action_hook_css()
 {
-
+	$primary_color = theme_options('primary_color');
 
 	//global font
 	$global_body_font = theme_options('batpa_body_font');

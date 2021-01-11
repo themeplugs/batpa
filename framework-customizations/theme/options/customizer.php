@@ -10,6 +10,10 @@ $options = array(
 			'styling_panel'			 => array(
 				'title'		 => esc_html__('Theme Styling', 'batpa'),
 				'options'	 => array(
+					'primary_color' => array(
+						'type'  => 'color-picker',
+						'label' => esc_html__('Primary Color', 'batpa'),
+					),
 					'batpa_body_font'		 => array(
 						'type'		 => 'typography-v2',
 						'value'		 => array(
@@ -140,7 +144,7 @@ $options = array(
 					'copyright_text'			 => array(
 						'label'		 => esc_html__('Copyright Text', 'batpa'),
 						'type'  => 'wp-editor',
-						'value' => esc_html__('Batpa WordPress Theme'),
+						'value' => esc_html__('Batpa WordPress Theme', 'batpa'),
 					),
 				),
 			),

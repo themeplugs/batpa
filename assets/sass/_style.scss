@@ -1,0 +1,22 @@
+@import "_variable";
+@import "_mixin";
+
+// banner
+.inner-banner-area {
+    padding: 40px 0;
+    background-color: #fbfbfb;
+    .banner-title {
+        margin: 0;
+    }
+}
+.main-container {
+    padding: 40px 0;
+}
+
+// 404
+.page-header {
+    .error-title {
+        font-size: 80px;
+        font-weight: 700;
+    }
+}

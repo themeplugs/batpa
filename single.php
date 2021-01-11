@@ -11,7 +11,7 @@ get_header();
 get_template_part('template-parts/banner/banner', 'blog');
 ?>
 
-<main id="content">
+<main id="content" class="main-container">
 	<div class="container">
 		<div class="content-area entry-content">
 			<div id="main" class="site-main" role="main">

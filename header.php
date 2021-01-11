@@ -33,7 +33,7 @@
 			<div class="container">
 				<div class="wrap_figure">
 					<div class="row">
-						<div class="col-lg-3 col-md-3">
+						<div class="col-9 col-md-3">
 							<div class="logo">
 								<?php if (has_custom_logo()) : ?>
 									<?php the_custom_logo(); ?>
@@ -56,11 +56,11 @@
 								<?php endif; ?>
 							</div>
 						</div>
-						<div class="col-lg-9 col-md-9">
+						<div class="col-3 col-md-9 align-self-center">
 							<?php if (has_nav_menu('primary')) { ?>
-								<div class="toggle-menu gb_menu">
+								<div class="toggle-menu gb_menu text-right">
 									<button onclick="batpa_gb_Menu_open()" class="gb_toggle">
-										<i class="fas fa-ellipsis-h"></i>
+										<i class="fas fa-bars"></i>
 									</button>
 								</div>
 							<?php } ?>

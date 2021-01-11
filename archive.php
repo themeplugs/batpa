@@ -11,12 +11,11 @@ get_header();
 get_template_part('template-parts/banner/banner', 'blog');
 ?>
 
-<main id="content">
+<main id="content" class="main-container">
 	<div class="container">
 		<?php if (have_posts()) : ?>
 			<header class="page-header">
 				<?php
-				the_archive_title('<h1 class="page-title"><span>', '</span></h1>');
 				the_archive_description('<div class="taxonomy-description">', '</div>');
 				?>
 			</header>

@@ -173,7 +173,7 @@ function the_breadcrumb($sep = ' > ')
         // Start the breadcrumb with a link to your homepage
         echo '<div class="breadcrumbs">';
         echo '<a href="';
-        echo get_option('home');
+        echo home_url();
         echo '">';
         bloginfo('name');
         echo '</a>' . $sep;
@@ -224,8 +224,10 @@ function the_breadcrumb($sep = ' > ')
 // theme option
 function theme_options($key)
 {
-    $value  = fw_get_db_customizer_option($key);
-    return $value;
+    if (defined('FW')) {
+        $value  = fw_get_db_customizer_option($key);
+        return $value;
+    }
 }
 
 
