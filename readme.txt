@@ -49,16 +49,12 @@ Batpa bundles the following third-party resources:
 	Source: https://pxhere.com/en/license
 	
 	License: CC0 1.0 Universal (CC0 1.0)
-	Source: https://pxhere.com/en/photo/175757
+	Source: https://pxhere.com/en/photo/559565
 
 	License: CC0 1.0 Universal (CC0 1.0)
-	Source: https://pxhere.com/en/photo/600714
+	Source: https://pxhere.com/en/photo/971635
 
 	License: CC0 1.0 Universal (CC0 1.0)
-	Source: https://pxhere.com/en/photo/826575
+	Source: https://pxhere.com/en/photo/764425
 
-	License: CC0 1.0 Universal (CC0 1.0)
-	Source: https://pxhere.com/en/photo/1561015
-
-	License: CC0 1.0 Universal (CC0 1.0)
-	Source: https://pxhere.com/en/photo/737739
+	

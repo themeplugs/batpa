@@ -164,8 +164,8 @@ function batpa_kses($raw)
 
 // breadcrumb
 
-function the_breadcrumb($sep = ' > ')
-{ // phpcs:ignore WPThemeReview.CoreFunctionality.PrefixAllGlobals.NonPrefixedFunctionFound
+function the_breadcrumb($sep = ' > ') // phpcs:ignore WPThemeReview.CoreFunctionality.PrefixAllGlobals.NonPrefixedFunctionFound
+{
 
 
     if (!is_front_page()) {
@@ -222,7 +222,7 @@ function the_breadcrumb($sep = ' > ')
 
 
 // theme option
-function theme_options($key)
+function theme_options($key) // phpcs:ignore WPThemeReview.CoreFunctionality.PrefixAllGlobals.NonPrefixedFunctionFound
 {
     if (defined('FW')) {
         $value  = fw_get_db_customizer_option($key);
