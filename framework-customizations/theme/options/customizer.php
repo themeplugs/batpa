@@ -1,6 +1,6 @@
 <?php
 
-$options = array(
+$options = array( // phpcs:ignore WPThemeReview.CoreFunctionality.PrefixAllGlobals.NonPrefixedVariableFound
 	'batpa_options' => array(
 		'title'				 => esc_html__('Batpa Theme Options', 'batpa'),
 		'options'			 => array(

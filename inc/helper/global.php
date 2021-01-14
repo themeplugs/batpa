@@ -164,8 +164,8 @@ function batpa_kses($raw)
 
 // breadcrumb
 
-function the_breadcrumb($sep = ' > '){
-
+function the_breadcrumb($sep = ' > ') // phpcs:ignore WPThemeReview.CoreFunctionality.PrefixAllGlobals.NonPrefixedFunctionFound
+{
     if (!is_front_page()) {
         // Start the breadcrumb with a link to your homepage
         echo '<div class="breadcrumbs">';
@@ -180,11 +180,11 @@ function the_breadcrumb($sep = ' > '){
             the_category('title_li=');
         } elseif (is_archive() || is_single()) {
             if (is_day()) {
-                printf(esc_html__('%s', 'batpa'), get_the_date());
+                printf(esc_html__('%s', 'batpa'), get_the_date()); // phpcs:ignore WordPress.WP.I18n.NoEmptyStrings
             } elseif (is_month()) {
-                printf(esc_html__('%s', 'batpa'), get_the_date(_x('F Y', 'monthly archives date format', 'batpa')));
+                printf(esc_html__('%s', 'batpa'), get_the_date(_x('F Y', 'monthly archives date format', 'batpa'))); // phpcs:ignore WordPress.WP.I18n.NoEmptyStrings
             } elseif (is_year()) {
-                printf(esc_html__('%s', 'batpa'), get_the_date(_x('Y', 'yearly archives date format', 'batpa')));
+                printf(esc_html__('%s', 'batpa'), get_the_date(_x('Y', 'yearly archives date format', 'batpa'))); // phpcs:ignore WordPress.WP.I18n.NoEmptyStrings
             } else {
                 _e('Blog Archives', 'batpa');
             }
@@ -219,7 +219,7 @@ function the_breadcrumb($sep = ' > '){
 
 
 // theme option
-function theme_options($key)
+function theme_options($key) // phpcs:ignore WPThemeReview.CoreFunctionality.PrefixAllGlobals.NonPrefixedFunctionFound
 {
     if (defined('FW')) {
         $value  = fw_get_db_customizer_option($key);

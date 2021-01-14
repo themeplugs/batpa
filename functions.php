@@ -42,7 +42,7 @@ function batpa_setup(){
 	add_image_size('batpa-featured-image', 850, 560, true);
 	add_image_size('batpa-thumbnail-avatar', 100, 100, true);
 
-	$GLOBALS['content_width'] = 1170;
+	$GLOBALS['content_width'] = 1170; // phpcs:ignore WPThemeReview.CoreFunctionality.PrefixAllGlobals.NonPrefixedVariableFound
 	register_nav_menus(array(
 		'primary' => esc_html__('Primary Menu', 'batpa'),
 	));

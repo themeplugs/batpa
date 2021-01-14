@@ -1,26 +1,26 @@
 <?php
-$banner_image    = '';
-$banner_title    = '';
-$banner_subtitle = '';
+$batpa_banner_image    = '';
+$batpa_banner_title    = '';
+$batpa_banner_subtitle = '';
 
 if (defined('FW')) {
-   $banner_settings = theme_options('blog_banner');
-   $show_breadcrumb = theme_options('breadcumb_show');
+   $batpa_banner_settings = theme_options('blog_banner');
+   $batpa_show_breadcrumb = theme_options('breadcumb_show');
    //image
-   $banner_image    = (is_array($banner_settings) && $banner_settings['url'] != '') ?
-      $banner_settings['url'] : '';
+   $batpa_banner_image    = (is_array($batpa_banner_settings) && $batpa_banner_settings['url'] != '') ?
+      $batpa_banner_settings['url'] : '';
    //breadcumb 
 } else {
    //default
-   $banner_image    = '';
-   $banner_title    = get_bloginfo('name');
-   $show_breadcrumb = 'no';
+   $batpa_banner_image    = '';
+   $batpa_banner_title    = get_bloginfo('name');
+   $batpa_show_breadcrumb = 'no';
 }
 
 
 ?>
 
-<div class="inner-banner-area" id="inner-banner-area" style="background-image: url(<?php echo esc_url($banner_image); ?>);">
+<div class="inner-banner-area" id="inner-banner-area" style="background-image: url(<?php echo esc_url($batpa_banner_image); ?>);">
    <div class="container">
       <div class="row">
          <div class="col-md-12">
@@ -37,7 +37,7 @@ if (defined('FW')) {
                   ?>
 
                </h1>
-               <?php if (isset($show_breadcrumb) && $show_breadcrumb == 'yes') : ?>
+               <?php if (isset($batpa_show_breadcrumb) && $batpa_show_breadcrumb == 'yes') : ?>
                   <?php the_breadcrumb(); ?>
                <?php endif; ?>
             </div><!-- Banner Heading end -->

@@ -7,4 +7,4 @@
  * @var array $cfg Fill this array with configuration data
  */
 
-$cfg['settings_form_side_tabs'] = true;
+$cfg['settings_form_side_tabs'] = true; // phpcs:ignore WPThemeReview.CoreFunctionality.PrefixAllGlobals.NonPrefixedVariableFound
