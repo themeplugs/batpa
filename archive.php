@@ -16,7 +16,7 @@ get_template_part('template-parts/banner/banner', 'blog');
 		<?php if (have_posts()) : ?>
 			<header class="page-header">
 				<?php
-				the_archive_description('<div class="taxonomy-description">', '</div>');
+					the_archive_description('<div class="taxonomy-description">', '</div>');
 				?>
 			</header>
 		<?php endif; ?>
@@ -45,17 +45,20 @@ get_template_part('template-parts/banner/banner', 'blog');
 							</div>
 							<div class="navigation">
 								<?php
+								
 								the_posts_pagination(array(
-									'prev_text'          => __('Previous page', 'batpa'),
-									'next_text'          => __('Next page', 'batpa'),
-									'before_page_number' => '<span class="meta-nav screen-reader-text">' . __('Page', 'batpa') . ' </span>',
+									'prev_text'          => esc_html__('Previous page', 'batpa'),
+									'next_text'          => esc_html__('Next page', 'batpa'),
+									'before_page_number' => '<span class="meta-nav screen-reader-text">' . esc_html__('Page', 'batpa') . ' </span>',
 								));
 								?>
 								<div class="clearfix"></div>
 							</div>
 						</section>
 					</div>
-					<div id="sidebar" class="col-lg-4 col-md-4"><?php dynamic_sidebar('sidebar-1'); ?></div>
+					<div id="sidebar" class="col-lg-4 col-md-4">
+						<?php dynamic_sidebar('sidebar-1'); ?>
+					</div>
 				</div>
 			</div>
 		</div>

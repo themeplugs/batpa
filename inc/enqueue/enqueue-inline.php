@@ -23,11 +23,11 @@ function batpa_action_hook_css()
 	// global style
 	$output	.= "
     body{
-			 $body_font;
-	  }
-	  h1,h2,h3,h4,h5,h6{
+		$body_font;
+	}
+	h1,h2,h3,h4,h5,h6{
 		  $batpa_heading;
-	  }
+	}
      
       ";
 	wp_add_inline_style('batpa-style', $output);

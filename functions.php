@@ -9,7 +9,7 @@
 
 // define methode
 // ------------------------------------------------------------------------
-define('BATPA_VERSION', '1.0.0');
+define('BATPA_VERSION', time());
 define('BATPA_MINWP_VERSION', '5.3');
 
 
@@ -30,8 +30,7 @@ define('BATPA_CSS_DIR', BATPA_THEME_DIR . '/assets/css');
 define('BATPA_JS_DIR', BATPA_THEME_DIR . '/assets/js');
 
 
-function batpa_setup()
-{
+function batpa_setup(){
 
 	add_theme_support('automatic-feed-links');
 	add_theme_support('post-thumbnails');
@@ -45,7 +44,7 @@ function batpa_setup()
 
 	$GLOBALS['content_width'] = 1170;
 	register_nav_menus(array(
-		'primary' => __('Primary Menu', 'batpa'),
+		'primary' => esc_html__('Primary Menu', 'batpa'),
 	));
 
 	add_theme_support('html5', array(
@@ -65,6 +64,8 @@ function batpa_setup()
 	// Add theme support for selective refresh for widgets.
 	add_theme_support('customize-selective-refresh-widgets');
 
+	
+
 	/*
 	 * This theme styles the visual editor to resemble the theme style,
 	 * specifically font, colors, and column width.
@@ -74,8 +75,7 @@ function batpa_setup()
 add_action('after_setup_theme', 'batpa_setup');
 
 
-function batpa_fonts_url()
-{
+function batpa_fonts_url(){
 	$font_url = '';
 	$font_family = array();
 	$font_family[] = 'Yantramanav:wght@100;300;400;500;700;900';

@@ -1,5 +1,5 @@
 === Batpa ===
-Contributors: themeplugs
+Contributors: themeshape, themeplugs
 Tags: two-columns, right-sidebar, custom-colors, custom-background, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, threaded-comments, wide-blocks, blog, portfolio, e-commerce
 Requires at least: 5.0
 Requires PHP: 7.0

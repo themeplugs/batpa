@@ -40,7 +40,7 @@ if (defined('FW')) {
 						<span class="entry-author"><i class="far fa-user"></i><a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>"><?php the_author(); ?></a></span>
 					<?php } ?>
 					<?php if ($blog_comments_show == 'yes') { ?>
-						<span class="entry-comments"><i class="fas fa-comments"></i> <?php comments_number(__('0 Comments', 'batpa'), __('0 Comments', 'batpa'), __('% Comments', 'batpa')); ?></span>
+						<span class="entry-comments"><i class="fas fa-comments"></i> <?php comments_number(esc_html__('0 Comments', 'batpa'), esc_html__('0 Comments', 'batpa'), esc_html__('% Comments', 'batpa')); ?></span>
 					<?php } ?>
 				</div>
 				<p><?php the_excerpt(); ?></p>

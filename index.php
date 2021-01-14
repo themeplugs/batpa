@@ -39,9 +39,9 @@ get_template_part('template-parts/banner/banner', 'blog');
 							<div class="navigation">
 								<?php
 								the_posts_pagination(array(
-									'prev_text'          => __('Previous page', 'batpa'),
-									'next_text'          => __('Next page', 'batpa'),
-									'before_page_number' => '<span class="meta-nav screen-reader-text">' . __('Page', 'batpa') . ' </span>',
+									'prev_text'          => esc_html__('Previous page', 'batpa'),
+									'next_text'          => esc_html__('Next page', 'batpa'),
+									'before_page_number' => '<span class="meta-nav screen-reader-text">' . esc_html__('Page', 'batpa') . ' </span>',
 								));
 								?>
 								<div class="clearfix"></div>

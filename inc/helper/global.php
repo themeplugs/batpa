@@ -164,16 +164,13 @@ function batpa_kses($raw)
 
 // breadcrumb
 
-function the_breadcrumb($sep = ' > ')
-{
-
+function the_breadcrumb($sep = ' > '){
 
     if (!is_front_page()) {
-
         // Start the breadcrumb with a link to your homepage
         echo '<div class="breadcrumbs">';
         echo '<a href="';
-        echo home_url();
+        echo esc_url(home_url());
         echo '">';
         bloginfo('name');
         echo '</a>' . $sep;
@@ -183,11 +180,11 @@ function the_breadcrumb($sep = ' > ')
             the_category('title_li=');
         } elseif (is_archive() || is_single()) {
             if (is_day()) {
-                printf(__('%s', 'batpa'), get_the_date());
+                printf(esc_html__('%s', 'batpa'), get_the_date());
             } elseif (is_month()) {
-                printf(__('%s', 'batpa'), get_the_date(_x('F Y', 'monthly archives date format', 'batpa')));
+                printf(esc_html__('%s', 'batpa'), get_the_date(_x('F Y', 'monthly archives date format', 'batpa')));
             } elseif (is_year()) {
-                printf(__('%s', 'batpa'), get_the_date(_x('Y', 'yearly archives date format', 'batpa')));
+                printf(esc_html__('%s', 'batpa'), get_the_date(_x('Y', 'yearly archives date format', 'batpa')));
             } else {
                 _e('Blog Archives', 'batpa');
             }

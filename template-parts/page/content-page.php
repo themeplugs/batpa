@@ -15,7 +15,7 @@
 		<p><?php the_content(); ?></p>
 		<?php
 		wp_link_pages(array(
-			'before' => '<div class="page-links">' . __('Pages:', 'batpa'),
+			'before' => '<div class="page-links">' . esc_html__('Pages:', 'batpa'),
 			'after'  => '</div>',
 		));
 		?>

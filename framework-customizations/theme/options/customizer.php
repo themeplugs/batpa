@@ -64,6 +64,19 @@ $options = array(
 			'news_setting_panel'	 => array(
 				'title'		 => esc_html__('Blog Settings', 'batpa'),
 				'options'	 => array(
+					'blog_sidebar' => array(
+						'type'  => 'select',
+						'label' => esc_html__('Sidebar', 'batpa'),
+						'desc'  => esc_html__('Description', 'batpa'),
+						'help'  => esc_html__('Help tip', 'batpa'),
+						'choices' => array(
+							'1' => esc_html__('No sidebar','batpa'),
+							'2' => esc_html__('Left Sidebar', 'batpa'),
+							'3' => esc_html__('Right Sidebar', 'batpa'),
+						),
+						'no-validate' => false,
+					), 
+
 					'blog_author_show'	 => array(
 						'type'			 => 'switch',
 						'value' 		 => 'yes',

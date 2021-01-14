@@ -3,9 +3,7 @@
  * hooks for adding google fonts
  */
 
-class Unyson_Google_Fonts
-{
-
+class Unyson_Google_Fonts{
 	static private $data = array(
 		'subset' => array(),
 		'family' => array(),
@@ -58,9 +56,10 @@ class Unyson_Google_Fonts
 	public static function output_url()
 	{
 		if ($url = self::generate_url()) :
-?>
-			<link href="<?php echo esc_attr($url) ?>" rel="stylesheet"><?php
-																	endif;
-																}
-															}
-															add_action('wp_enqueue_scripts', array('Unyson_Google_Fonts', 'output_url'), 9999);
+	?>
+		<link href="<?php echo esc_attr($url) ?>" rel="stylesheet">
+		<?php
+				endif;
+			}
+		}
+	add_action('wp_enqueue_scripts', array('Unyson_Google_Fonts', 'output_url'), 9999);

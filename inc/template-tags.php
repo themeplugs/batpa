@@ -17,7 +17,7 @@ if (!function_exists('batpa_entry_footer')) :
 	 */
 	function batpa_entry_footer()
 	{
-		$separate_meta = __(', ', 'batpa');
+		$separate_meta = esc_html__(', ', 'batpa');
 		$categories_list = get_the_category_list($separate_meta);
 		$tags_list = get_the_tag_list('', $separate_meta);
 		if (((batpa_categorized_blog() && $categories_list) || $tags_list) || get_edit_post_link()) {
@@ -37,7 +37,7 @@ if (!function_exists('batpa_edit_link')) :
 		edit_post_link(
 			sprintf(
 				/* translators: %s: Name of current post */
-				__('Edit<span class="screen-reader-text"> "%s"</span>', 'batpa'),
+				esc_html__('Edit<span class="screen-reader-text"> "%s"</span>', 'batpa'),
 				get_the_title()
 			),
 			'<span class="edit-link">',
