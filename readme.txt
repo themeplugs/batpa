@@ -7,7 +7,6 @@ Tested up to: 5.6
 Stable tag: 1.0.0
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
-
 Batpa is an business and multipurpose WordPress theme
 
 == Description ==
@@ -44,17 +43,18 @@ Batpa bundles the following third-party resources:
 	License: Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License.
 	Source: http://fontawesome.io/
 
-* Pxhere Images, 
-	License: CC0 1.0 Universal (CC0 1.0)
-	Source: https://pxhere.com/en/license
+
+== License/copyright for images ==
+
+* logo.png self created.
+* Screenshot images are all licensed under CC0 Universal
 	
 	License: CC0 1.0 Universal (CC0 1.0)
-	Source: https://pxhere.com/en/photo/559565
+	Source: https://www.freepik.com/free-vector/business-consultant-thoughtful-man-working-laptop_5259876.htm
 
 	License: CC0 1.0 Universal (CC0 1.0)
-	Source: https://pxhere.com/en/photo/971635
+	Source: https://www.pexels.com/photo/advice-advise-advisor-business-7075/
 
-	License: CC0 1.0 Universal (CC0 1.0)
-	Source: https://pxhere.com/en/photo/764425
+	
 
 	
