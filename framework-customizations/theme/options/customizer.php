@@ -17,7 +17,7 @@ $options = array( // phpcs:ignore WPThemeReview.CoreFunctionality.PrefixAllGloba
 					'batpa_body_font'		 => array(
 						'type'		 => 'typography-v2',
 						'value'		 => array(
-							'family'		 => 'Nunito',
+							'family'		 => 'Yantramanav',
 							'size'			 => 16,
 							'line-height'	 => 28,
 						),
@@ -37,7 +37,7 @@ $options = array( // phpcs:ignore WPThemeReview.CoreFunctionality.PrefixAllGloba
 					'batpa_heading_title'	 => array(
 						'type'		 => 'typography-v2',
 						'value'		 => array(
-							'family'		 => 'Nunito',
+							'family'		 => 'Yantramanav',
 							'variation'		 => '800',
 							'line-height'	 => '',
 							'letter-spacing' => 0,
