@@ -14,13 +14,14 @@ Batpa is an business and multipurpose WordPress theme
 
 == Changelog ==
 
-= 1.0.0 (31-12-2020) =
+= 1.0.0 =
 	-- Initial Released.
 
 
 == Resources ==
 
-Batpa WordPress Theme, Copyright 2020 pewilliams
+Batpa is an business and multipurpose WordPress theme, Copyright 2021 themeplugs
+
 Batpa is distributed under the terms of the GNU GPL
 
 Batpa bundles the following third-party resources:
@@ -40,7 +41,7 @@ Batpa bundles the following third-party resources:
     http://www.gnu.org/licenses/gpl.html
 
 * Font Awesome icons, Copyright Dave Gandy
-	License: Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License.
+	License: Icons: CC BY 5.0, Fonts: SIL OFL 1.1, Code: MIT License.
 	Source: http://fontawesome.io/
 
 
@@ -49,9 +50,7 @@ Batpa bundles the following third-party resources:
 * logo.png self created.
 * Screenshot images are all licensed under CC0 Universal
 	
-	License: CC0 1.0 Universal (CC0 1.0)
-	Source: https://www.freepik.com/free-vector/business-consultant-thoughtful-man-working-laptop_5259876.htm
-
+	
 	License: CC0 1.0 Universal (CC0 1.0)
 	Source: https://www.pexels.com/photo/advice-advise-advisor-business-7075/
 

@@ -20,7 +20,6 @@ function batpa_scripts(){
         
         wp_enqueue_style('batpa-style', get_template_directory_uri() . '/assets/css/master.css',BATPA_VERSION);
         
-        wp_enqueue_style('frontend-style', get_template_directory_uri() . '/assets/css/frontend.css',BATPA_VERSION);
         // Theme stylesheet.
         wp_enqueue_style( 'batpa-main-style', get_template_directory_uri() . '/style.css', array(''), BATPA_VERSION);
  

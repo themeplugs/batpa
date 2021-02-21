@@ -43,7 +43,7 @@ if (defined('FW')) {
 						<span class="entry-comments"><i class="fas fa-comments"></i> <?php comments_number(esc_html__('0 Comments', 'batpa'), esc_html__('0 Comments', 'batpa'), esc_html__('% Comments', 'batpa')); ?></span>
 					<?php } ?>
 				</div>
-				<p><?php the_excerpt(); ?></p>
+				<?php the_excerpt(); ?>
 			</div>
 			<div class="clearfix"></div>
 		</div>
