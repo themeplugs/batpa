@@ -2,8 +2,8 @@
 Contributors: themeshape, themeplugs
 Tags: two-columns, right-sidebar, custom-colors, custom-background, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, threaded-comments, wide-blocks, blog, portfolio, e-commerce
 Requires at least: 5.0
-Requires PHP: 7.0
-Tested up to: 5.6
+Requires PHP: 5.6
+Tested up to: 5.7
 Stable tag: 1.0.0
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html

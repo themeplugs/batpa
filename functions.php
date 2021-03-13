@@ -10,7 +10,7 @@
 // define methode
 // ------------------------------------------------------------------------
 define('BATPA_VERSION', time());
-define('BATPA_MINWP_VERSION', '5.3');
+define('BATPA_MINWP_VERSION', '5.0');
 
 
 // define methode for theme assets url
