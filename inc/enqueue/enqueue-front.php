@@ -18,10 +18,10 @@ function batpa_scripts(){
         //font-awesome
         wp_enqueue_style('font-awesome', get_template_directory_uri() . '/assets/css/fontawesome-all.css');
         
-        wp_enqueue_style('batpa-style', get_template_directory_uri() . '/assets/css/master.css',BATPA_VERSION);
+        wp_enqueue_style('batpa-master', get_template_directory_uri() . '/assets/css/master.css',BATPA_VERSION);
         
         // Theme stylesheet.
-        wp_enqueue_style( 'batpa-main-style', get_template_directory_uri() . '/style.css', array(''), BATPA_VERSION);
+        wp_enqueue_style( 'batpa-style', get_template_directory_uri() . '/style.css', array(''), BATPA_VERSION);
  
     }
 

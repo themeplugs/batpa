@@ -45,14 +45,22 @@ Batpa bundles the following third-party resources:
 	Source: http://fontawesome.io/
 
 
-== License/copyright for images ==
 
-* logo.png self created.
+
 * Screenshot images are all licensed under CC0 Universal
 	
 	
 	License: CC0 1.0 Universal (CC0 1.0)
 	Source: https://www.pexels.com/photo/advice-advise-advisor-business-7075/
+
+
+	License: CC0 1.0 Universal (CC0 1.0)
+	Source: https://www.freepik.com/free-vector/employee-working-office-interior-workplace-flat-vector-illustration_12953779.htm#page=1&query=business%20website&position=6
+
+	name : logo.png self created.
+	License: CC0 1.0 Universal (CC0 1.0)
+
+
 
 	
 
