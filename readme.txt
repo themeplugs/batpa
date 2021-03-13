@@ -4,7 +4,7 @@ Tags: two-columns, right-sidebar, custom-colors, custom-background, custom-heade
 Requires at least: 5.0
 Requires PHP: 5.6
 Tested up to: 5.7
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Batpa is an business and multipurpose WordPress theme
@@ -13,6 +13,9 @@ Batpa is an business and multipurpose WordPress theme
 Batpa is an business and multipurpose WordPress theme
 
 == Changelog ==
+
+= 1.0.1 =
+	-- Issue Fixed.
 
 = 1.0.0 =
 	-- Initial Released.
@@ -53,9 +56,6 @@ Batpa bundles the following third-party resources:
 	License: CC0 1.0 Universal (CC0 1.0)
 	Source: https://www.pexels.com/photo/advice-advise-advisor-business-7075/
 
-
-	License: CC0 1.0 Universal (CC0 1.0)
-	Source: https://www.freepik.com/free-vector/employee-working-office-interior-workplace-flat-vector-illustration_12953779.htm#page=1&query=business%20website&position=6
 
 	name : logo.png self created.
 	License: CC0 1.0 Universal (CC0 1.0)
