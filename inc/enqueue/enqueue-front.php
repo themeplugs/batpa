@@ -16,7 +16,7 @@ function batpa_scripts(){
         //Bootstarp 
         wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.css');
         //font-awesome
-        wp_enqueue_style('font-awesome', get_template_directory_uri() . '/assets/css/fontawesome-all.css');
+        wp_enqueue_style('fontawesome-all', get_template_directory_uri() . '/assets/css/fontawesome-all.css');
         
         wp_enqueue_style('batpa-master', get_template_directory_uri() . '/assets/css/master.css',BATPA_VERSION);
         
@@ -28,16 +28,16 @@ function batpa_scripts(){
 
     if (!is_admin()) {
         //Custom JS
-        wp_enqueue_script('batpa-custom.js', get_theme_file_uri('/assets/js/batpa-custom.js'), array('jquery'), true);
+        wp_enqueue_script('batpa-custom', get_theme_file_uri('/assets/js/batpa-custom.js'), array('jquery'), true);
 
         //Nav Focus JS
-        wp_enqueue_script('batpa-navigation-focus', get_theme_file_uri('/assets/js/navigation-focus.js'), array('jquery'), true);
+        wp_enqueue_script('navigation-focus', get_theme_file_uri('/assets/js/navigation-focus.js'), array('jquery'), true);
 
         //Superfish JS
-        wp_enqueue_script('superfish-js', get_theme_file_uri('/assets/js/jquery.superfish.js'), array('jquery'), true);
+        wp_enqueue_script('jquery-superfish', get_theme_file_uri('/assets/js/jquery.superfish.js'), array('jquery'), true);
 
         //Bootstarp JS
-        wp_enqueue_script('bootstrap.js', get_theme_file_uri('/assets/js/bootstrap.js'), array('jquery'), true);
+        wp_enqueue_script('bootstrap', get_theme_file_uri('/assets/js/bootstrap.js'), array('jquery'), true);
 
         if (is_singular() && comments_open() && get_option('thread_comments')) {
             wp_enqueue_script('comment-reply');

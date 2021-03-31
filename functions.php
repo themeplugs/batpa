@@ -9,7 +9,7 @@
 
 // define methode
 // ------------------------------------------------------------------------
-define('BATPA_VERSION', time());
+define('BATPA_VERSION', '1.0.2');
 define('BATPA_MINWP_VERSION', '5.0');
 
 
@@ -39,10 +39,11 @@ function batpa_setup(){
 	add_theme_support('custom-background', array(
 		'default-color' => 'ffffff',
 	));
-	add_image_size('batpa-featured-image', 850, 560, true);
-	add_image_size('batpa-thumbnail-avatar', 100, 100, true);
+
+	add_image_size('batpa-featured-image', 850, 560, ['center', 'center']);
 
 	$GLOBALS['content_width'] = 1170; // phpcs:ignore WPThemeReview.CoreFunctionality.PrefixAllGlobals.NonPrefixedVariableFound
+	
 	register_nav_menus(array(
 		'primary' => esc_html__('Primary Menu', 'batpa'),
 	));

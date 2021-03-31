@@ -164,7 +164,7 @@ function batpa_kses($raw)
 
 // breadcrumb
 
-function the_breadcrumb($sep = ' > ') // phpcs:ignore WPThemeReview.CoreFunctionality.PrefixAllGlobals.NonPrefixedFunctionFound
+function batpa_the_breadcrumb($sep = ' > ') // phpcs:ignore WPThemeReview.CoreFunctionality.PrefixAllGlobals.NonPrefixedFunctionFound
 {
     if (!is_front_page()) {
         // Start the breadcrumb with a link to your homepage
@@ -219,7 +219,7 @@ function the_breadcrumb($sep = ' > ') // phpcs:ignore WPThemeReview.CoreFunction
 
 
 // theme option
-function theme_options($key) // phpcs:ignore WPThemeReview.CoreFunctionality.PrefixAllGlobals.NonPrefixedFunctionFound
+function batpa_theme_options($key) // phpcs:ignore WPThemeReview.CoreFunctionality.PrefixAllGlobals.NonPrefixedFunctionFound
 {
     if (defined('FW')) {
         $value  = fw_get_db_customizer_option($key);

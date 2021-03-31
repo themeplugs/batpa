@@ -10,9 +10,9 @@
 
 <?php
 if (defined('FW')) {
-	$batpa_blog_author_show = theme_options('blog_author_show');
-	$batpa_blog_date_show = theme_options('blog_date_show');
-	$batpa_blog_comments_show = theme_options('blog_comments_show');
+	$batpa_blog_author_show = batpa_theme_options('blog_author_show');
+	$batpa_blog_date_show = batpa_theme_options('blog_date_show');
+	$batpa_blog_comments_show = batpa_theme_options('blog_comments_show');
 } else {
 	$batpa_blog_author_show = "yes";
 	$batpa_blog_date_show = "yes";
