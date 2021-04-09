@@ -116,3 +116,11 @@ require get_parent_theme_file_path('/inc/template-functions.php');
 
 // included unson google fonts
 require get_parent_theme_file_path('/classes/unyson-google-fonts.php');
+
+// tgmpa plugin
+require get_parent_theme_file_path('/inc/libs/class-tgm-plugin-activation.php');
+require get_parent_theme_file_path('/inc/libs/tgmpa-plugins.php');
+
+// demos list
+require get_parent_theme_file_path('/inc/demos/demos.php');
+

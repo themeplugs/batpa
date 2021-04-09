@@ -8,20 +8,12 @@ Stable tag: 1.0.3
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Batpa is an business and multipurpose WordPress theme
-
+Batpa is your ideal WordPress Theme to create pixel-perfect websites. It’s fast, elegant and customizable; Well suited for businesses, agencies, creatives as well as beginners. No coding knowledge is required to create an amazing website that will rock your business. Edit Content with Visual Drug & Drop  Elementor Page Builder. Customize every page across devices using intuitive and visual controls. Creating Mobile responsive websites that look good on any device has never been easier.  One-Click Demo Import Ready
 == Description ==
 Batpa is an business and multipurpose WordPress theme
 
 == Changelog ==
-= 1.0.3 =
--- Demo content update
 
-= 1.0.2 =
--- Soft Rejection Issue Fixed
-
-= 1.0.1 =
--- Issue Fixed.
 
 = 1.0.0 =
 -- Initial Released.
