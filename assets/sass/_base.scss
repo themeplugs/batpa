@@ -291,18 +291,6 @@ template {
    margin-left: auto;
    margin-right: auto;
 }
-.alignwide {
-   margin-left: -60px;
-   margin-right: -60px;
-}
-.alignfull {
-   margin-left: calc(-100vw / 2 + 100% / 2);
-   margin-right: calc(-100vw / 2 + 100% / 2);
-   max-width: 100vw;
-}
-.alignfull img {
-   width: 100vw;
-}
 
 /*--------- Forms ---------*/
 
@@ -957,8 +945,7 @@ a.closebtn {
    margin: 20px 0;
 }
 #Category-section .postbox.smallpostimage {
-   padding: 20px;
-   border: 1px solid #e5eaec;
+   padding: 15px 30px;
    .box-content{
       margin: -20px;
    }
@@ -967,11 +954,6 @@ a.closebtn {
    color: #003478;
 }
 
-#Category-section .overlay p,
-#single-post-section .overlay p {
-   text-align: center;
-   font-size: 15px;
-}
 #Category-section h3 a{
    color: #101010;
 }
@@ -1167,7 +1149,6 @@ h3.entry-title a:hover {
 }
 .pagination,
 .comments-pagination {
-   border-top: 1px solid #eee;
    font-size: 14px;
    font-size: 0.875rem;
    font-weight: 800;
@@ -1228,10 +1209,7 @@ h3.entry-title a:hover {
    font-size: 15px;
    padding: 10px;
 }
-.link-more {
-   text-align: center;
-   margin-top: 0px;
-}
+
 a.more-link {
    color: #fff;
    background: #003478;
@@ -1365,7 +1343,14 @@ nav.social-navigation :hover {
    margin: 3em 0;
 }
 .post-navigation .nav-links {
-   padding: 1em 0;
+   display: flex;
+   justify-content: space-between;
+   span{
+      margin: 0;
+      i{
+         font-size: 15px;
+      }
+   }
 }
 .nav-subtitle {
    background: transparent;
@@ -1513,10 +1498,15 @@ h1.entry-title {
 .nex {
    margin: 0 0 20px;
 }
-#comments {
-   clear: both;
-   padding: 2em 0 0.5em;
+
+.comments-area{
+   background: #fff;
+   padding: 40px;
+   margin-bottom: 40px;
+   margin-top: 60px;
+   box-shadow: 0 15px 29px -4px #3f49621f;
 }
+
 .comments-title {
    font-size: 20px;
    font-size: 1.25rem;
@@ -1600,9 +1590,7 @@ h1.entry-title {
 .comments-pagination {
    margin: 2em 0 3em;
 }
-.form-submit {
-   text-align: right;
-}
+
 /*sidebar*/
 
 #sidebar td#prev a {
@@ -1637,9 +1625,8 @@ h1.entry-title {
    font-weight: bold;
    font-size: 22px;
    color: #2c2c2c;
-   text-align: center;
-   border-bottom: solid 2px #2c2c2c;
-   border-top: solid 1px #2c2c2c;
+   border-bottom: 1px solid #2c2c2c;
+   border-top: 1px solid #2c2c2c;
    padding: 4% 0;
 }
 #sidebar input[type="search"],
@@ -1670,19 +1657,24 @@ input[type="search"] {
    font-weight: bold;
 }
 #sidebar .widget {
-   margin-bottom: 25px;
+   margin-bottom: 40px;
+   padding: 30px 30px 30px 30px;
+   box-shadow:  0 15px 29px -4px #3f49621f;
+   border-radius: 5px;
+   background: $white-color;
 }
 #sidebar ul {
    list-style: none;
    margin: 0;
    padding: 0;
    font-size: 17px;
+   padding-left: 15px;
 }
 #sidebar ul li {
    border-bottom: 1px dashed #ddd;
    background: url(assets/images/icon1.png) no-repeat 0 15px;
    margin: 0 0 5px;
-   padding: 10px 20px 10px;
+   padding: 0;
 }
 #sidebar ul li:last-child {
    border: none;
@@ -1737,6 +1729,12 @@ button.search-submit {
 }
 .widget_calendar tfoot td {
    border: 0;
+}
+.widget_calendar td#today{
+   background: $primary-color;
+   a{
+     color: $white-color
+   }
 }
 
 /*----------- Media ----------*/
@@ -1800,19 +1798,8 @@ video {
    .site-content {
       padding: 2em 0 0;
    }
-   .comments-pagination,
-   .post-navigation {
-      clear: both;
-   }
-   .post-navigation .nav-previous {
-      float: left;
-      width: 50%;
-   }
-   .post-navigation .nav-next {
-      float: right;
-      text-align: right;
-      width: 50%;
-   }
+  
+
    .nav-next,
    .post-navigation .nav-next {
       margin-top: 0;
@@ -1821,11 +1808,6 @@ video {
    .archive .site-main > article,
    .search .site-main > article {
       padding-bottom: 4em;
-   }
-   .navigation.pagination {
-      clear: both;
-      float: right;
-      width: 58%;
    }
    .entry-footer {
       display: table;

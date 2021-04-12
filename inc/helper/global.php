@@ -234,8 +234,7 @@ function batpa_theme_options($key) // phpcs:ignore WPThemeReview.CoreFunctionali
  * Get shortcode advanced Font styles
  *
  */
-function batpa_advanced_font_styles($style)
-{
+function batpa_advanced_font_styles($style){
     $font_styles = '';
     if (isset($style['google_font']) && ($style['google_font'] === true || $style['google_font'] === 'true')) {
 
@@ -261,4 +260,32 @@ function batpa_advanced_font_styles($style)
 
 
     return !empty($font_styles) ? $font_styles : '';
+}
+
+
+function batpa_post_meta(){
+
+    $batpa_blog_author_show = "yes";
+    $batpa_blog_date_show = "yes";
+    $batpa_blog_comments_show = "yes";
+
+    if (defined('FW')) {
+        $batpa_blog_author_show = batpa_theme_options('blog_author_show');
+        $batpa_blog_date_show = batpa_theme_options('blog_date_show');
+        $batpa_blog_comments_show = batpa_theme_options('blog_comments_show');
+    } 
+
+    ?>
+    <div class="meta-box">
+        <?php if ($batpa_blog_author_show == 'yes') { ?>
+            <span><i class="batpaicon-clock"></i><?php the_time(get_option('date_format')); ?></span>
+        <?php } ?>
+        <?php if ($batpa_blog_date_show == 'yes') { ?>
+            <span class="entry-author"><i class="batpaicon-user"></i><a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>"><?php the_author(); ?></a></span>
+        <?php } ?>
+        <?php if ($batpa_blog_comments_show == 'yes') { ?>
+            <span class="entry-comments"><i class="batpaicon-comment-alt"></i> <?php comments_number(esc_html__('0 Comments', 'batpa'), esc_html__('0 Comments', 'batpa'), esc_html__('% Comments', 'batpa')); ?></span>
+        <?php } ?>
+    </div>
+    <?php
 }

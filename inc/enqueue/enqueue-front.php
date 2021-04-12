@@ -16,9 +16,9 @@ function batpa_scripts(){
         //Bootstarp 
         wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.css');
         //font-awesome
-        wp_enqueue_style('fontawesome-all', get_template_directory_uri() . '/assets/css/fontawesome-all.css');
+        wp_enqueue_style('batpaicon', get_template_directory_uri() . '/assets/css/batpaicon.css');
         
-        wp_enqueue_style('batpa-master', get_template_directory_uri() . '/assets/css/master.css',BATPA_VERSION);
+        wp_enqueue_style('batpa-main', get_template_directory_uri() . '/assets/css/main.css',BATPA_VERSION);
         
         // Theme stylesheet.
         wp_enqueue_style( 'batpa-style', get_template_directory_uri() . '/style.css', BATPA_VERSION);

@@ -116,8 +116,15 @@ table > tfoot > tr > td {
 
 div#calendar_wrap {
     caption {
-        margin: 10px 10px 0;
-        padding-bottom: 0;
+        margin: 0;
+        padding: 8px;
+        caption-side: top;
+        text-align: center;
+        background: $primary-color;
+        font-weight: 600;
+        color: #fff;
+        letter-spacing: 1px;
+        text-transform: uppercase;
     }
     table > thead > tr > th,
     table > tbody > tr > th,
@@ -138,6 +145,7 @@ dt {
     font-weight: bold;
     margin: 6px;
 }
+
 
 /* Gallery item */
 
@@ -452,7 +460,14 @@ select {
 
 .post,
 article.page {
-    margin: 0 0 50px;
+    margin-bottom: 30px;
+    box-shadow: 0 15px 29px -4px #3f49621f;
+    .single & {
+        box-shadow: none;
+    }
+    .postbox{
+        border-radius: 5px;
+    }
     .post-media {
         width: calc(100% - 0px);
         position: relative;
@@ -477,73 +492,41 @@ article.page {
         }
     }
 
-    .entry-header {
-        .entry-title {
-            font-size: 36px;
-            font-weight: 800;
-            line-height: 44px;
-            letter-spacing: -1.08px;
-            word-wrap: break-word;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            a {
-                color: #003478;
-                &:hover {
-                    color: $secondary-color;
-                }
-            }
-        }
-        .post-meta {
-            margin-bottom: 20px;
-            span {
-                display: inline-block;
-                margin-right: 28px;
-                color: #5a5a5a;
-                font-size: 14px;
-                i {
-                    color: $primary-color;
-                    margin-right: 6px;
-                }
-                a {
-                    color: #5a5a5a;
-                }
-            }
-        }
-        .post-category {
-            margin-bottom: 15px;
-            .post-category span {
-                a {
-                    color: $primary-color;
-                }
-            }
-        }
+    .post-title{
+        font-size: 30px;
+        margin: 10px 0;
+        margin-top: 6px;
+        transition: 0.2s;
+        word-break: break-word;
+        color: #313845;
     }
     p {
         margin-top: 0;
     }
-    .post-footer {
-        clear: both;
-        .readmore {
+    .post-desc{
+        margin-bottom: 15px;
+        text-align: left;
+    }
+    .link-more {
+        a{
+            color: #fff;
+            background: #003478;
+            padding: 10px 25px;
             font-weight: 700;
-            color: $primary-color;
-            text-transform: uppercase;
+            font-size: 16px;
+            border-radius: 5px;
             display: inline-block;
-            font-size: 14px;
-            i {
-                vertical-align: middle;
-                margin-left: 6px;
-            }
-            &:hover {
-                color: $secondary-color;
-            }
+            text-transform: capitalize;
+            letter-spacing: 0.5px;
         }
     }
-    &.sticky {
-        .meta-featured-post {
+    &.sticky{
+        overflow: hidden;
+        .sticky-badge {
             display: block;
             position: absolute;
-            right: -35px;
-            top: 18px;
+            right: -37px;
+            top: 4px;
             background: $primary-color;
             width: auto;
             height: auto;
@@ -554,19 +537,30 @@ article.page {
             font-size: 12px;
             font-weight: 700;
             -webkit-transform: rotate(45deg);
-            z-index: 1;
-        }
-        .post-body {
-            overflow: hidden;
-            position: relative;
+            z-index: 1;           
         }
     }
 }
-.post-meta {
-    text-transform: capitalize;
+// meta box 
+.meta-box {
+    display: inline-block;
+    align-items: center;
+    word-break: break-word;
+    margin-bottom: 15px;
     span {
         font-size: 14px;
-        color: #5a5a5a;
+        color: #a2a6ad;
+        text-transform: capitalize;
+        font-weight: 400;
+        &:not(:first-child){
+            margin-left: 10px;
+        }
+        i{
+            vertical-align: middle;
+            font-size: 12px;
+            line-height: .8;
+            margin-right: 5px;
+        }
     }
 }
 
@@ -1113,6 +1107,8 @@ article.page {
 
 .pagination {
     margin: 0;
+    display: flex;
+    justify-content: center;
     li {
         a,
         span {

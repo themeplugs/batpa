@@ -38,8 +38,8 @@ if (defined('FW')) {
 								endif;
 
 								the_post_navigation(array(
-									'prev_text' => '<span class="screen-reader-text">' . esc_html__('Previous Post', 'batpa') . '</span><span aria-hidden="true" class="nav-subtitle">' . esc_html__('Previous', 'batpa') . '</span>',
-									'next_text' => '<span class="screen-reader-text">' . esc_html__('Next Post', 'batpa') . '</span><span aria-hidden="true" class="nav-subtitle">' . esc_html__('Next', 'batpa') . '</span> ',
+									'prev_text' => '<span class="screen-reader-text">' . esc_html__('Previous Post', 'batpa') . '</span><span aria-hidden="true" class="nav-subtitle"><i class="batpaicon-arrow-left"></i>' . esc_html__('Previous', 'batpa') . '</span>',
+									'next_text' => '<span class="screen-reader-text">' . esc_html__('Next Post', 'batpa') . '</span><span aria-hidden="true" class="nav-subtitle">' . esc_html__('Next', 'batpa') . '<i class="batpaicon-arrow-right"></i></span> ',
 								));
 
 							endwhile; // End of the loop.
