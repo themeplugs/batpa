@@ -9,7 +9,7 @@
 
 // define methode
 // ------------------------------------------------------------------------
-define('BATPA_VERSION', '1.0.3');
+define('BATPA_VERSION', '1.0.4');
 define('BATPA_MINWP_VERSION', '5.0');
 
 

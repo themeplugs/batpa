@@ -23,10 +23,10 @@ get_template_part('template-parts/banner/banner', 'blog');
 
 		<div class="content-area">
 			<div id="main" class="site-main" role="main">
-				<div class="row m-0">
+				<div class="row">
 					<div class="content_area col-lg-8 col-md-8">
 						<section id="post_section">
-							<div class="row">
+							<div class="post-items">
 								<?php
 								if (have_posts()) : ?>
 								<?php

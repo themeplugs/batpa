@@ -546,7 +546,7 @@ td:last-child {
 /*---------- Links -----------*/
 
 a {
-   color: #003478;
+   color: #101010;
    text-decoration: none;
 }
 a:hover,
@@ -577,7 +577,7 @@ a:active {
    color: #222;
 }
 .page-template-custom-home-page .top_header span i {
-   color: #003478;
+   color: #101010;
 }
 .top_header span i {
    margin: 0 10px;
@@ -863,7 +863,7 @@ a.closebtn {
    margin: 25px 0;
 }
 .home-btn a {
-   background-image: linear-gradient(to right, #f2bb1e, #fd5e48);
+   background: $primary-color;
    padding: 10px 20px;
    font-weight: 700;
    font-size: 14px;
@@ -871,7 +871,7 @@ a.closebtn {
    color: #fff;
 }
 .home-btn a:hover {
-   background: #003478;
+   color: #fff;
 }
 
 /*--------- Services Section--------- */
@@ -957,38 +957,39 @@ a.closebtn {
    margin: 20px 0;
 }
 #Category-section .postbox.smallpostimage {
-   padding: 10px;
+   padding: 20px;
    border: 1px solid #e5eaec;
+   .box-content{
+      margin: -20px;
+   }
 }
 #Category-section .postbox.smallpostimage:hover h3 a {
    color: #003478;
 }
-#Category-section .overlay,
-#single-post-section .overlay {
-   padding: 15px 0 0;
-}
+
 #Category-section .overlay p,
 #single-post-section .overlay p {
    text-align: center;
    font-size: 15px;
 }
-#Category-section h3 a {
-   font-size: 22px;
-   color: #2c2c2c;
+#Category-section h3 a{
+   color: #101010;
 }
 #Category-section h3 {
    text-align: center;
    padding: 0px;
+   color: #101010;
 }
 #Category-section .date-box,
 #single-post-section .date-box {
    text-align: center;
    font-size: 13px;
-   margin-bottom: 5px;
+   margin-bottom: 15px;
    font-weight: 600;
 }
 #single-post-section .date-box {
    text-align: left;
+   margin: 20px 0 20px;
 }
 #Category-section .date-box i,
 #single-post-section .date-box i {
@@ -1239,6 +1240,9 @@ a.more-link {
    font-size: 15px;
    border-radius: 5px;
    display: inline-block;
+   &:hover{
+      color: #fff;
+   }
 }
 .more-link:before {
    margin-top: 0 !important;
@@ -2062,3 +2066,5 @@ video {
       left: 15%;
    }
 }
+
+

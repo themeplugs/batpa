@@ -24,14 +24,17 @@ if (defined('FW')) {
 <div id="Category-section" class="entry-content">
 	<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<div class="postbox smallpostimage">
-			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 			<?php
 			if (has_post_thumbnail()) { ?>
 				<div class="box-content text-center">
+					<a href="<?php the_permalink(); ?>">
 					<?php the_post_thumbnail(); ?>
+					</a>
 				</div>
 			<?php } ?>
+			
 			<div class="overlay">
+				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 				<div class="date-box">
 					<?php if ($batpa_blog_author_show == 'yes') { ?>
 						<span><i class="far fa-calendar-alt"></i><?php the_time(get_option('date_format')); ?></span>

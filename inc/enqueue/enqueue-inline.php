@@ -6,6 +6,7 @@ function batpa_action_hook_css()
 
 	//global font
 	$global_body_font = batpa_theme_options('batpa_body_font');
+
 	Unyson_Google_Fonts::add_typography_v2($global_body_font);
 	$body_font = batpa_advanced_font_styles($global_body_font);
 
@@ -28,13 +29,21 @@ function batpa_action_hook_css()
 		h1,h2,h3,h4,h5,h6{
 			$batpa_heading;
 		}
-		h1,h2,h3,h4,h5,h6{
+		a:hover, 
+		#Category-section .postbox.smallpostimage:hover h3 a,
+		.post-navigation span:hover, .post-navigation h3:hover,
+		a:active{
 			color: $primary_color;
 		}
+		a.more-link,
+		button, input[type=button], input[type=submit],
+		.home-btn a,
+		button.search-submit{
+			background-color: $primary_color;
+		}
 	";
-	$outputs = wp_kses_post($output);
 
-	wp_add_inline_style('batpa-style', $outputs);
+	wp_add_inline_style('batpa-master', $output);
 
 	
 }
