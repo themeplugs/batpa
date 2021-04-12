@@ -2604,11 +2604,6 @@ figcaption {
   text-align: center;
 }
 
-.alignfull,
-.alignfull img {
-  width: 100vw;
-}
-
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
@@ -2695,31 +2690,66 @@ select {
   cursor: pointer;
 }
 
+.wp-block-cover-image.has-background-dim:not([class*=-background-color]),
+.wp-block-cover.has-background-dim:not([class*=-background-color]),
+.wp-block-cover {
+  color: #fff;
+}
+
+blockquote, .wp-block-quote:not(.is-large), .wp-block-quote:not(.is-style-large) {
+  padding: 20px;
+  padding-left: 40px;
+  border-left: 5px solid #E3335F;
+  margin: 15px 0;
+  background: #003478;
+  position: relative;
+  color: #fff;
+}
+blockquote p, .wp-block-quote:not(.is-large) p, .wp-block-quote:not(.is-style-large) p {
+  margin-bottom: 0px;
+}
+
+.blog-single blockquote.wp-block-quote {
+  background: #003478;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+blockquote.has-text-color.has-very-dark-gray-color {
+  color: #fff;
+}
+
 /*============================
    post
 =============================== */
 .post,
-article.page {
+article.page,
+.page {
   margin-bottom: 30px;
   box-shadow: 0 15px 29px -4px #3f49621f;
 }
 .single .post,
-.single article.page {
+.single article.page,
+.single .page {
   box-shadow: none;
 }
 .post .postbox,
-article.page .postbox {
+article.page .postbox,
+.page .postbox {
   border-radius: 5px;
 }
 .post .post-media,
-article.page .post-media {
+article.page .post-media,
+.page .post-media {
   width: calc(100% - 0px);
   position: relative;
   overflow: hidden;
   margin-bottom: 25px;
 }
 .post .post-media img,
-article.page .post-media img {
+article.page .post-media img,
+.page .post-media img {
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -2727,13 +2757,15 @@ article.page .post-media img {
   border-bottom-right-radius: 0;
 }
 .post .post-media .video-link-btn,
-article.page .post-media .video-link-btn {
+article.page .post-media .video-link-btn,
+.page .post-media .video-link-btn {
   position: absolute;
   right: 0;
   bottom: 0;
 }
 .post .post-media .video-link-btn a,
-article.page .post-media .video-link-btn a {
+article.page .post-media .video-link-btn a,
+.page .post-media .video-link-btn a {
   background: #003478;
   padding: 15px 20px;
   display: inline-block;
@@ -2741,7 +2773,8 @@ article.page .post-media .video-link-btn a {
   font-size: 25px;
 }
 .post .post-title,
-article.page .post-title {
+article.page .post-title,
+.page .post-title {
   font-size: 30px;
   margin: 10px 0;
   margin-top: 6px;
@@ -2750,16 +2783,19 @@ article.page .post-title {
   color: #313845;
 }
 .post p,
-article.page p {
+article.page p,
+.page p {
   margin-top: 0;
 }
 .post .post-desc,
-article.page .post-desc {
+article.page .post-desc,
+.page .post-desc {
   margin-bottom: 15px;
   text-align: left;
 }
 .post .link-more a,
-article.page .link-more a {
+article.page .link-more a,
+.page .link-more a {
   color: #fff;
   background: #003478;
   padding: 10px 25px;
@@ -2771,11 +2807,13 @@ article.page .link-more a {
   letter-spacing: 0.5px;
 }
 .post.sticky,
-article.page.sticky {
+article.page.sticky,
+.page.sticky {
   overflow: hidden;
 }
 .post.sticky .sticky-badge,
-article.page.sticky .sticky-badge {
+article.page.sticky .sticky-badge,
+.page.sticky .sticky-badge {
   display: block;
   position: absolute;
   right: -37px;

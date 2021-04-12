@@ -366,10 +366,7 @@ a:not([href]):not([tabindex]) {
 figcaption{
     text-align: center;
 }
-.alignfull,
-.alignfull img {
-    width: 100vw;
-}
+
 h1, h2, h3, h4, h5, h6 {
     margin-top: .5rem;
     margin-bottom: 1rem;
@@ -454,12 +451,41 @@ select {
     }
 }
 
+.wp-block-cover-image.has-background-dim:not([class*=-background-color]),
+.wp-block-cover.has-background-dim:not([class*=-background-color]),
+.wp-block-cover{
+    color: #fff;
+}
+
+blockquote, .wp-block-quote:not(.is-large), .wp-block-quote:not(.is-style-large) {
+    padding: 20px;
+    padding-left: 40px;
+    border-left: 5px solid #E3335F;
+    margin: 15px 0;
+    background: $primary-color;
+    position: relative;
+    color: #fff;
+    p{
+        margin-bottom: 0px;
+    }
+}
+.blog-single blockquote.wp-block-quote {
+    background: $primary-color;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+blockquote.has-text-color.has-very-dark-gray-color {
+    color: #fff;
+}
+
 /*============================
    post
 =============================== */
 
 .post,
-article.page {
+article.page,
+.page  {
     margin-bottom: 30px;
     box-shadow: 0 15px 29px -4px #3f49621f;
     .single & {
