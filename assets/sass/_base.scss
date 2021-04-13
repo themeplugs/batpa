@@ -698,13 +698,12 @@ ul.list_nav {
    padding: 10px 18px 10px 8px;
 }
 .sf-arrows .sf-with-ul:after {
-   content: "\f0dd";
+   content: "\e901";
    position: absolute;
    right: 0px;
-   top: 2px;
-   font-size: 18px;
-   font-family: "Font Awesome 5 Free";
-   font-weight: 900;
+   top: 11px;
+   font-size: 13px;
+   font-family: "batpaicon";
 }
 .topbar .sf-arrows .sf-with-ul:after {
    font-size: 14px;
@@ -1503,8 +1502,9 @@ h1.entry-title {
    background: #fff;
    padding: 40px;
    margin-bottom: 40px;
-   margin-top: 60px;
-   box-shadow: 0 15px 29px -4px #3f49621f;
+   margin-top: 100px;
+   border: 1px solid #f1f1f1;
+   border-radius: 5px;
 }
 
 .comments-title {
@@ -1659,7 +1659,7 @@ input[type="search"] {
 #sidebar .widget {
    margin-bottom: 40px;
    padding: 30px 30px 30px 30px;
-   box-shadow:  0 15px 29px -4px #3f49621f;
+   border: 1px solid #f1f1f1;
    border-radius: 5px;
    background: $white-color;
 }
@@ -1732,9 +1732,7 @@ button.search-submit {
 }
 .widget_calendar td#today{
    background: $primary-color;
-   a{
-     color: $white-color
-   }
+   color: $white-color;
 }
 
 /*----------- Media ----------*/

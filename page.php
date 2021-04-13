@@ -8,7 +8,7 @@
  */
 
 get_header();
-get_template_part('template-parts/banner/banner', 'blog');
+get_template_part('template-parts/banner/banner', 'page');
 ?>
 
 <main id="content" class="main-container">

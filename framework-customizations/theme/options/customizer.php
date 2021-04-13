@@ -147,7 +147,25 @@ $options = array( // phpcs:ignore WPThemeReview.CoreFunctionality.PrefixAllGloba
 							'label'	 => esc_html__('Yes', 'batpa'),
 						),
 					),
-
+					'page_banner'			 => array(
+						'label'		 => esc_html__('Page Banner', 'batpa'),
+						'type'		 => 'upload',
+						'desc'		 => esc_html__('Choose your page banner', 'batpa'),
+					),
+					'page_breadcumb_show'	 => array(
+						'type'			 => 'switch',
+						'value'          => 'yes',
+						'label'			 => esc_html__('Page Breadcrumb Show', 'batpa'),
+						'desc'			 => esc_html__('Do you want to show page Breadcrumb?', 'batpa'),
+						'left-choice'	 => array(
+							'value'	 => 'no',
+							'label'	 => esc_html__('No', 'batpa'),
+						),
+						'right-choice'	 => array(
+							'value'	 => 'yes',
+							'label'	 => esc_html__('Yes', 'batpa'),
+						),
+					),
 				),
 			),
 			/* banner Settings */
