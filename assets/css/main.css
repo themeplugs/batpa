@@ -2807,7 +2807,7 @@ article.page.sticky .sticky-badge {
   display: block;
   position: absolute;
   right: -37px;
-  top: 4px;
+  top: -4px;
   background: #003478;
   width: auto;
   height: auto;

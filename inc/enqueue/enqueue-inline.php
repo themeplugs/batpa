@@ -21,8 +21,6 @@ function batpa_action_hook_css()
 	// init custom css
 	$output = $custom_css;
 
-	fw_print($primary_color);
-
 	// global style
 	$output	.= "
 		body{
@@ -43,12 +41,15 @@ function batpa_action_hook_css()
 		button.search-submit,
 		.post .link-more a, article.page .link-more a,
 		.post.sticky .sticky-badge,
-		article.page.sticky .sticky-badge{
+		article.page.sticky .sticky-badge,
+		div#calendar_wrap caption,
+		.widget_calendar td#today,.page-numbers.current,.gb_nav_menu ul ul,.gb_nav_menu ul ul a:hover,
+		.prev.page-numbers,.next.page-numbers,#sidebar .tagcloud a:hover, .site-footer .tagcloud a:hover{
 			background-color: $primary_color;
 		}
 	";
 
-	wp_add_inline_style('batpa-master', $output);
+	wp_add_inline_style('batpa-main', $output);
 }
 
 add_action('wp_enqueue_scripts', 'batpa_action_hook_css', 90);
