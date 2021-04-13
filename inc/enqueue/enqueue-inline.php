@@ -21,6 +21,8 @@ function batpa_action_hook_css()
 	// init custom css
 	$output = $custom_css;
 
+	fw_print($primary_color);
+
 	// global style
 	$output	.= "
 		body{
@@ -38,14 +40,15 @@ function batpa_action_hook_css()
 		a.more-link,
 		button, input[type=button], input[type=submit],
 		.home-btn a,
-		button.search-submit{
+		button.search-submit,
+		.post .link-more a, article.page .link-more a,
+		.post.sticky .sticky-badge,
+		article.page.sticky .sticky-badge{
 			background-color: $primary_color;
 		}
 	";
 
 	wp_add_inline_style('batpa-master', $output);
-
-	
 }
 
 add_action('wp_enqueue_scripts', 'batpa_action_hook_css', 90);
