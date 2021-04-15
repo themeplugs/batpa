@@ -32,6 +32,10 @@ define('BATPA_JS_DIR', BATPA_THEME_DIR . '/assets/js');
 
 function batpa_setup(){
 
+	$lang_dir = BATPA_THEME_DIR . '/languages';
+    load_theme_textdomain('batpa', $lang_dir);
+
+
 	add_theme_support('automatic-feed-links');
 	add_theme_support('post-thumbnails');
 	add_theme_support('title-tag');
