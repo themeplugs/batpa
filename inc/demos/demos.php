@@ -72,6 +72,41 @@ function batpa_demo_import_lists(){
          )
       ),
 
+      'demo3' =>array(
+         'title' => __( 'Digital Agency Demo', 'batpa' ),/*Title*/
+         'is_pro' => false,/*Is Premium*/
+         'type' => 'elementor',/*Optional eg gutentor, elementor or other page builders or type*/
+         'author' => __( 'themeplugs', 'batpa' ),/*Author Name*/
+         'keywords' => array( 'business', 'multipurpose', 'Agency'),/*Search keyword*/
+         'categories' => array( 'business','multipurpose', 'Agency' ),/*Categories*/
+            'template_url' => array(
+                'content' => $demo_url.'/agency/content.json',/*Full URL Path to content.json*/
+                'options' => $demo_url.'/agency/options.json',/*Full URL Path to options.json*/
+                'widgets' => $demo_url.'/agency/widgets.json'/*Full URL Path to widgets.json*/
+            ),
+         'screenshot_url' => $demo_url.'/agency/screenshot.png',/*Full URL Path to demo screenshot image*/
+         'demo_url' => 'http://themeplugs.com/wp/batpa/digital-agency',/*Full URL Path to Live Demo*/
+         'plugins' => array(
+            array(
+               'name'      => __( 'elementor', 'batpa' ),
+               'slug'      => 'elementor',
+            ),
+            array(
+               'name'      => __( 'Elementskit Lite', 'batpa' ),
+               'slug'      => 'elementskit-lite',
+            ),
+            array(
+               'name'      => __( 'Unyson', 'batpa' ),
+               'slug'      => 'unyson',
+            ),
+            array(
+               'name'      => __( 'metform', 'batpa' ),
+               'slug'      => 'metform',
+            ),
+          
+         )
+      ),
+
 
    );
    return $demo_lists;

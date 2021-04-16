@@ -4,7 +4,7 @@ Tags: two-columns, right-sidebar, custom-colors, custom-background, custom-heade
 Requires at least: 5.0
 Requires PHP: 5.6
 Tested up to: 5.7
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -14,6 +14,10 @@ Batpa is an business and multipurpose WordPress theme
 
 == Changelog ==
 
+= 1.0.5  (16-04-2021)=
+-- Added: Digital Agency  niche Demo
+-- Update: Blog Unittest CSS
+-- Added: pot file for language translate 
 
 = 1.0.5  (12-04-2021)=
 -- Added: Finace niche Demo
