@@ -24,6 +24,15 @@ if (defined('FW')) {
 <div id="Category-section" class="entry-content">
 	<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<div class="postbox smallpostimage">
+		<?php 
+           if ( is_sticky() ) {
+				?>
+				<span class="sticky-badge">
+					<?php echo esc_html__( 'Sticky', 'batpa' );  ?>
+				</span>
+				<?php
+			}
+		?>  
 			<?php
 			if (has_post_thumbnail()) { ?>
 				<div class="box-content text-center">
@@ -34,19 +43,13 @@ if (defined('FW')) {
 			<?php } ?>
 			
 			<div class="overlay">
-				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-				<div class="date-box">
-					<?php if ($batpa_blog_author_show == 'yes') { ?>
-						<span><i class="far fa-calendar-alt"></i><?php the_time(get_option('date_format')); ?></span>
-					<?php } ?>
-					<?php if ($batpa_blog_date_show == 'yes') { ?>
-						<span class="entry-author"><i class="far fa-user"></i><a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>"><?php the_author(); ?></a></span>
-					<?php } ?>
-					<?php if ($batpa_blog_comments_show == 'yes') { ?>
-						<span class="entry-comments"><i class="fas fa-comments"></i> <?php comments_number(esc_html__('0 Comments', 'batpa'), esc_html__('0 Comments', 'batpa'), esc_html__('% Comments', 'batpa')); ?></span>
-					<?php } ?>
+				<h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+				<?php batpa_post_meta(); ?>
+				<div class="post-desc">
+					
+					<?php the_excerpt()  ?>
+
 				</div>
-				<?php the_excerpt(); ?>
 			</div>
 			<div class="clearfix"></div>
 		</div>

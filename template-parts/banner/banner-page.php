@@ -5,14 +5,16 @@ $batpa_banner_subtitle = '';
 $banner_class = '';
 
 if (defined('FW')) {
-   $batpa_banner_settings = batpa_theme_options('blog_banner');
-   $batpa_show_breadcrumb = batpa_theme_options('breadcumb_show');
+   $batpa_banner_settings = batpa_theme_options('page_banner');
+   $batpa_show_breadcrumb = batpa_theme_options('page_breadcumb_show');
    //image
    $batpa_banner_image    = (is_array($batpa_banner_settings) && $batpa_banner_settings['url'] != '') ?
       $batpa_banner_settings['url'] : '';
+
       if($batpa_banner_image !=''){
          $banner_class = 'banner_overlay';
       }
+
    //breadcumb 
 } else {
    //default
