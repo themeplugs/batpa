@@ -8,6 +8,7 @@
  */
 
 get_header();
+get_template_part('template-parts/banner/banner', 'page');
 
 
 // calling title part from blog dir

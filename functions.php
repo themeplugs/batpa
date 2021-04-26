@@ -9,7 +9,7 @@
 
 // define methode
 // ------------------------------------------------------------------------
-define('BATPA_VERSION', '1.0.6');
+define('BATPA_VERSION', '1.0.7');
 define('BATPA_MINWP_VERSION', '5.0');
 
 
@@ -125,6 +125,6 @@ require get_parent_theme_file_path('/classes/unyson-google-fonts.php');
 require get_parent_theme_file_path('/inc/libs/class-tgm-plugin-activation.php');
 require get_parent_theme_file_path('/inc/libs/tgmpa-plugins.php');
 
-// demos list
-require get_parent_theme_file_path('/inc/demos/demos.php');
+// contents list
+require get_parent_theme_file_path('/inc/contents/contents.php');
 

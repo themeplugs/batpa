@@ -127,17 +127,47 @@ $options = array( // phpcs:ignore WPThemeReview.CoreFunctionality.PrefixAllGloba
 			'banner_setting_panel'	 => array(
 				'title'		 => esc_html__('Banner Settings', 'batpa'),
 				'options'	 => array(
+					'blog_banner_show'	 => array(
+						'type'			 => 'switch',
+						'value'          => 'no',
+						'label'			 => esc_html__('Blog Banner Show', 'batpa'),
+						'desc'			 => esc_html__('Do you want to show blog banner?', 'batpa'),
+						'left-choice'	 => array(
+							'value'	 => 'no',
+							'label'	 => esc_html__('No', 'batpa'),
+						),
+						'right-choice'	 => array(
+							'value'	 => 'yes',
+							'label'	 => esc_html__('Yes', 'batpa'),
+						),
+					),
 					'blog_banner'			 => array(
 						'label'		 => esc_html__('Blog Banner', 'batpa'),
 						'type'		 => 'upload',
 						'desc'		 => esc_html__('Choose your banner', 'batpa'),
 
 					),
+			
 					'breadcumb_show'	 => array(
 						'type'			 => 'switch',
 						'value'          => 'yes',
 						'label'			 => esc_html__('Breadcrumb Show', 'batpa'),
 						'desc'			 => esc_html__('Do you want to show Breadcrumb?', 'batpa'),
+						'left-choice'	 => array(
+							'value'	 => 'no',
+							'label'	 => esc_html__('No', 'batpa'),
+						),
+						'right-choice'	 => array(
+							'value'	 => 'yes',
+							'label'	 => esc_html__('Yes', 'batpa'),
+						),
+					),
+
+					'page_banner_show'	 => array(
+						'type'			 => 'switch',
+						'value'          => 'no',
+						'label'			 => esc_html__('Page Banner Show', 'batpa'),
+						'desc'			 => esc_html__('Do you want to show page banner?', 'batpa'),
 						'left-choice'	 => array(
 							'value'	 => 'no',
 							'label'	 => esc_html__('No', 'batpa'),

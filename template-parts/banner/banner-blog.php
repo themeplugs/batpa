@@ -7,6 +7,7 @@ $banner_class = '';
 if (defined('FW')) {
    $batpa_banner_settings = batpa_theme_options('blog_banner');
    $batpa_show_breadcrumb = batpa_theme_options('breadcumb_show');
+   $blog_banner_show = batpa_theme_options('blog_banner_show');
    //image
    $batpa_banner_image    = (is_array($batpa_banner_settings) && $batpa_banner_settings['url'] != '') ?
       $batpa_banner_settings['url'] : '';
@@ -19,11 +20,12 @@ if (defined('FW')) {
    $batpa_banner_image    = '';
    $batpa_banner_title    = get_bloginfo('name');
    $batpa_show_breadcrumb = 'no';
+   $blog_banner_show = 'no';
 }
 
 
 ?>
-
+<?php if($blog_banner_show == 'yes'){ ?>
 <div class="inner-banner-area <?php echo esc_attr($banner_class); ?>" style="background-image: url(<?php echo esc_url($batpa_banner_image); ?>);">
    <div class="container">
       <div class="row">
@@ -49,3 +51,4 @@ if (defined('FW')) {
       </div><!-- Row end-->
    </div><!-- Container end-->
 </div><!-- Banner area end-->
+<?php } ?>

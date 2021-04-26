@@ -9,7 +9,7 @@
 
 get_header();
 
-// get_template_part('template-parts/banner/banner', 'blog');
+get_template_part('template-parts/banner/banner', 'blog');
 ?>
 
 <main id="content" class="main-container">

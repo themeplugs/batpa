@@ -43,6 +43,14 @@ function batpa_action_hook_css()
 		.post.sticky .sticky-badge,
 		article.page.sticky .sticky-badge,
 		div#calendar_wrap caption,
+		.woocommerce #respond input#submit,
+		.woocommerce a.button,
+		.woocommerce button.button,
+		.woocommerce input.button,
+		.woocommerce #respond input#submit.alt,
+		.woocommerce a.button.alt,
+		.woocommerce button.button.alt,
+		.woocommerce input.button.alt,
 		.widget_calendar td#today,.page-numbers.current,.gb_nav_menu ul ul,.gb_nav_menu ul ul a:hover,
 		.prev.page-numbers,.next.page-numbers,#sidebar .tagcloud a:hover, .site-footer .tagcloud a:hover{
 			background-color: $primary_color;

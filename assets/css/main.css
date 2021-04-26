@@ -1047,12 +1047,6 @@ a.closebtn {
   margin: 0 auto 0.5em;
 }
 
-.woocommerce .products li {
-  width: 30% !important;
-  text-align: center;
-  margin: 0 20px 20px 0 !important;
-}
-
 .woocommerce #sidebar {
   margin-top: 2em;
 }
@@ -1104,9 +1098,9 @@ h2.woocommerce-loop-product__title {
 .woocommerce a.button.alt,
 .woocommerce button.button.alt,
 .woocommerce input.button.alt {
-  background-image: linear-gradient(to right, #f2bb1e, #fd5e48);
+  background: #003478;
   color: #fff;
-  border-radius: 50px;
+  border-radius: 36px;
 }
 
 .woocommerce #respond input#submit:hover,
@@ -2254,6 +2248,10 @@ a.closebtn.gb_menu:focus,
     left: 15%;
   }
 }
+#single-post-section .meta-box {
+  margin: 30px 0 15px;
+}
+
 /* Global */
 .admin-bar .navbar-sticky.sticky {
   margin-top: 30px;
@@ -2593,10 +2591,7 @@ blockquote p {
   color: #fff;
 }
 
-a:not([href]):not([tabindex]) {
-  color: #fff !important;
-  text-decoration: none;
-}
+
 
 figcaption {
   text-align: center;

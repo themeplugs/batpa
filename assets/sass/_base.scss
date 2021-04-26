@@ -986,11 +986,7 @@ a.closebtn {
 .woocommerce ul.products li.product .star-rating {
    margin: 0 auto 0.5em;
 }
-.woocommerce .products li {
-   width: 30% !important;
-   text-align: center;
-   margin: 0 20px 20px 0 !important;
-}
+
 .woocommerce #sidebar {
    margin-top: 2em;
 }
@@ -1034,9 +1030,9 @@ h2.woocommerce-loop-product__title {
 .woocommerce a.button.alt,
 .woocommerce button.button.alt,
 .woocommerce input.button.alt {
-   background-image: linear-gradient(to right, #f2bb1e, #fd5e48);
+   background: $primary-color;
    color: #fff;
-   border-radius: 50px;
+   border-radius: 36px;
 }
 .woocommerce #respond input#submit:hover,
 .woocommerce a.button:hover,
@@ -2048,3 +2044,8 @@ video {
 }
 
 
+#single-post-section {
+   .meta-box{
+      margin: 30px 0 15px;
+   }
+}
