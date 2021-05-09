@@ -181,6 +181,47 @@ function batpa_demo_import_lists(){
             ),
          )
       ),
+      'demo6' =>array(
+         'title' => __( 'Event & Conference Demo', 'batpa' ),/*Title*/
+         'is_pro' => false,/*Is Premium*/
+         'type' => 'elementor',/*Optional eg gutentor, elementor or other page builders or type*/
+         'author' => __( 'themeplugs', 'batpa' ),/*Author Name*/
+         'keywords' => array( 'event'),/*Search keyword*/
+         'categories' => array( 'event' ),/*Categories*/
+            'template_url' => array(
+                'content' => $demo_url.'/event/content.json',/*Full URL Path to content.json*/
+                'options' => $demo_url.'/event/options.json',/*Full URL Path to options.json*/
+                'widgets' => $demo_url.'/event/widgets.json'/*Full URL Path to widgets.json*/
+            ),
+         'screenshot_url' => $demo_url.'/event/screenshot.png',/*Full URL Path to demo screenshot image*/
+         'demo_url' => 'http://themeplugs.com/wp/batpa/event',/*Full URL Path to Live Demo*/
+         'plugins' => array(
+            array(
+               'name'      => __( 'elementor', 'batpa' ),
+               'slug'      => 'elementor',
+            ),
+            array(
+               'name'      => __( 'Elementskit Lite', 'batpa' ),
+               'slug'      => 'elementskit-lite',
+            ),
+            array(
+               'name'      => __( 'Unyson', 'batpa' ),
+               'slug'      => 'unyson',
+            ),
+            array(
+               'name'      => __( 'metform', 'batpa' ),
+               'slug'      => 'metform',
+            ),
+            array(
+               'name'      => __( 'woocommerce', 'batpa' ),
+               'slug'      => 'woocommerce',
+            ),
+            array(
+               'name'      => __( 'wp-event-solution', 'batpa' ),
+               'slug'      => 'wp-event-solution',
+            ),
+         )
+      ),
 
 
    );
